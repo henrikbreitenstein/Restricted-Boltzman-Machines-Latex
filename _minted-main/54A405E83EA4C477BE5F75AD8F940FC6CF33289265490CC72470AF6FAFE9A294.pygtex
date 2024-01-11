@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{quantum\PYGZus{}reg} \PYG{o}{=} \PYG{n}{qk}\PYG{o}{.}\PYG{n}{QuantumRegistry}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}
+    \PYG{n}{classical\PYGZus{}reg} \PYG{o}{=} \PYG{n}{qk}\PYG{o}{.}\PYG{n}{ClassicalRegistry}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}
+    \PYG{n}{circuit} \PYG{o}{=} \PYG{n}{qk}\PYG{o}{.}\PYG{n}{QuantumCircuit}\PYG{p}{(}\PYG{n}{quantum\PYGZus{}reg}\PYG{p}{,} \PYG{n}{classical\PYGZus{}reg}\PYG{p}{)}
+    \PYG{n}{circuit}\PYG{o}{.}\PYG{n}{initialize}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{circuit}\PYG{o}{.}\PYG{n}{h}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+\end{Verbatim}

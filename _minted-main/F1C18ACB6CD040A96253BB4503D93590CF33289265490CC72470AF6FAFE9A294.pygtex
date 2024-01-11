@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{counts} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+        \PYG{l+s+s1}{\PYGZsq{}00\PYGZsq{}} \PYG{p}{:} \PYG{n}{n\PYGZus{}00} \PYG{c+c1}{\PYGZsh{}Number of |00\PYGZgt{} measured,}
+        \PYG{l+s+s1}{\PYGZsq{}01\PYGZsq{}} \PYG{p}{:} \PYG{n}{n\PYGZus{}01} \PYG{c+c1}{\PYGZsh{}Number of |01\PYGZgt{} measured,}
+        \PYG{l+s+s1}{\PYGZsq{}10\PYGZsq{}} \PYG{p}{:} \PYG{n}{n\PYGZus{}10} \PYG{c+c1}{\PYGZsh{}Number of |10\PYGZgt{} measured,}
+        \PYG{l+s+s1}{\PYGZsq{}11\PYGZsq{}} \PYG{p}{:} \PYG{n}{n\PYGZus{}11} \PYG{c+c1}{\PYGZsh{}Number of |11\PYGZgt{} measured}
+    \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

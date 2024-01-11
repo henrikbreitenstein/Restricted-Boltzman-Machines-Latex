@@ -1,0 +1,9 @@
+\section{Neural network quantum states}
+
+To use a neural network to solve a quantum mechanical system we need a way to represent the quantum state with the neural network. The solution is using neural network quantum states, abbreviated NQS, which was introduced by G. Carlo and M. Troyer in 2017 \cite{Carleo_2017}. A quantum state $\ket{\Psi}$ can be expressed by a neural network as
+
+\begin{equation}
+    \langle s_{1}\ldots s_{N}|\Psi ;\boldsymbol{W}, \boldsymbol{B}\rangle =F(s_{1}\ldots s_{N} ; \boldsymbol{W}, \boldsymbol{B} ) \; ,
+\end{equation}
+
+where we have $N$ input variables, with accordance to the number of degrees of freedom the state $\ket{\Psi}$ has, as well as weights $\boldsymbol{W}$ and biases $\boldsymbol{B}$ of the neural network $F$.

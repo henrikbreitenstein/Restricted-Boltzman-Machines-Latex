@@ -1,0 +1,11 @@
+\section{Controls and Errors}
+
+Seeing how accurate a model is can be use full both during training, to see how well it optimizes, and for a trained model. For this we can simply look at the desired output of the model, a target solution $\boldsymbol{z_t}$, and compare to the output of the model $\boldsymbol{z_m}$ with the mean squared error for example:
+
+\begin{equation} \label{eq:mse}
+    MSE = \frac{1}{N} \sum_{i = 1}^N (\boldsymbol{z}_{t, i} - \boldsymbol{z}_{m, i})^2 \; .
+\end{equation}
+
+
+
+

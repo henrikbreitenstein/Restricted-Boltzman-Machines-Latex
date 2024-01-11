@@ -1,0 +1,73 @@
+\section{Methods and Algorithms}
+\subsection{Full Configuration Interaction Theory}\label{sec:fci}
+
+We want to show that diagonalizing the Hamiltonian matrix yields the energies of the different levels. Starting of with the time-independent Schrodinger equation
+
+\begin{equation}
+    H\ket{\psi} = E \ket{\psi} \; .
+\end{equation}
+
+Assuming we can express $\ket{\psi}$ in terms of an orthonormal basis $\left \{ \ket{n} \right \}$:
+
+\begin{equation} \label{eq:psibasis}
+    \ket{\psi} = \sum_{n} c_n \ket{n} \; ,
+\end{equation}
+
+we can then insert this into the time-independent Schrodinger equation and get
+
+\begin{equation} \label{eq:fcisum}
+    \sum_n c_n H \ket{n} = E \sum_n c_n \ket{n} \; .
+\end{equation}
+
+Since the basis $\left \{ \ket{n} \right \}$ is orthonormal we that the identity matrix can be expressed as
+
+$$I = \sum_k \ket{k}\bra{k} \; ,$$
+
+where $\ket{k} \in \left \{ \ket{n} \right \}$. Inserting this into equation \ref{eq:fcisum} we get that
+
+\begin{equation}
+    \sum_k \sum_n \bra{k} H \ket{n} c_n \ket{k} =  E \sum_n c_n \ket{n} \; . 
+\end{equation}
+
+Multiplying from the left side by $\ket{m} \in \left \{ \ket{n} \right \}$ we get
+
+\begin{equation}
+   \sum_n \bra{k} H \ket{n} c_n \braket{m}{k} =  E \sum_n c_n \braket{m}{n} \; , 
+\end{equation}
+
+where
+
+\begin{align*}
+    \braket{m}{k} &= \delta_{mk}
+    \braket{m}{n} &= \delta_{mn} \; ,
+\end{align*}
+
+such that
+
+\begin{equation} \label{eq:fcielement}
+   \sum_n \bra{m} H \ket{n} c_n  =  E c_m \; . 
+\end{equation}
+
+$\bra{m} H \ket{n}$ is the element $m, n$ of the Hamiltonian matrix, so \ref{eq:fcielement} can be expressed as
+
+\begin{equation}
+   \sum_n H_{mn} c_n  =  E c_m \; . 
+\end{equation}
+
+And in matrix form this becomes
+
+\begin{equation}
+    HC = EC \; ,
+\end{equation}
+
+where
+
+$$C = \begin{bmatrix}
+    c_0 \\
+    c_1 \\
+    \vdots \\
+    c_{n-1} \\
+    c_n
+\end{bmatrix} \; .$$
+
+Diagonalizing $H$ will then give us the eigenvalues $E$ as the energy of the different levels of the system.

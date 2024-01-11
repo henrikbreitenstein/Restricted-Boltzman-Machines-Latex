@@ -1,0 +1,193 @@
+\section{Second quantization}
+\subsection{Creation and annihilation operators}
+
+Starting with the vacuum state $\ket{0}$. The creation operator creates a single-particle state $\alpha_i$:
+
+\begin{equation}
+    \hc{a}{\alpha_1} \ket{0} = \ket{\alpha_1} \; ,
+\end{equation}
+
+which can be extended for more particles
+
+\begin{equation}
+    \hc{a}{\alpha_1}\hc{a}{\alpha_2}\dots \hc{a}{\alpha_n}\ket{0} = \ket{\alpha_1\alpha_2\dots\alpha_n} \: .
+\end{equation}
+
+The annihilation operator destroys the particle
+
+\begin{equation}
+    \op{a}{\alpha_1} \ket{\alpha_1} = \ket{0} \; .
+\end{equation}
+
+They are hermitian conjugate, which means
+
+\begin{equation}
+    \op{a}{\alpha_i} = \left ( \hc{a}{\alpha_i} \right ) ^ {\dagger} \; .
+\end{equation}
+
+Furthermore, the Pauli principle says we cannot have two particles in the same state, which gives us
+
+\begin{equation}
+    \hc{a}{\alpha_i} \hc{a}{\alpha_i} = 0 \; .
+\end{equation}
+
+Similarly we cannot annihilate a particle that does not exist in the first place
+$$\alpha \neq \left \{ \alpha_i\right \}$$
+\begin{equation}
+    \op{a}{\alpha} \ket{\alpha_1 \alpha_2 \dots \alpha_n} = 0 \; . 
+\end{equation}
+
+For fermions the state wavefunction is anti symmetric, therefor switching position of two particles yields a factor of $-1$, and we get that
+
+$$\hc{a}{\alpha_i}\hc{a}{\alpha_k} = - \hc{a}{\alpha_k}\hc{a}{\alpha_i} \;.$$
+
+From this we have the commutation relations
+
+\begin{align}
+    \left \{ \hc{a}{\alpha}\hc{a}{\beta} \right \} &= 0 \\
+    \left \{ \op{a}{\alpha}\op{a}{\beta} \right \} &= 0 \\ 
+    \left \{ \hc{a}{\alpha}\op{a}{\beta} \right \} &= \delta_{\alpha\beta}
+\end{align}
+
+\subsection{Operators in second quantization}
+\url{https://github.com/ManyBodyPhysics/FYS4480/blob/master/doc/pub/week36/ipynb/week36.ipynb}
+
+For a one-body operator in coordinate space we have
+\begin{equation}
+    \hat{H}_0 = \sum_i \hat{h}_0(x_i) \label{eq:2-23} \; ,
+\end{equation}
+
+and using the anti-symmetric Slater determinant from \ref{eq:slatdif}, which we can write as:
+\begin{equation}
+    \Phi(x_1, x_2,\dots ,x_n,\alpha_1,\alpha_2,\dots, \alpha_n)= \frac{1}{\sqrt{n!}} \sum_p (-1)^p\hat{P}\psi_{\alpha_1}(x_1)\psi_{\alpha_2}(x_2) \dots \psi_{\alpha_n}(x_n) \; ,
+\end{equation}
+
+we can define 
+
+\begin{equation}
+    \hat{h}_0(x_i) \psi_{\alpha_i}(x_i) = \sum_{\alpha_k'} \psi_{\alpha_k'}(x_i) \langle\alpha_k'|\hat{h}_0|\alpha_k\rangle \label{eq:2-25} \; .
+\end{equation}
+
+So for each one-particle function in the Slater determinant we gain a contribution to $\op{H}{0}\ket{\Phi}$. Our Slater determinant can be written in second quantization as simply
+
+\begin{equation}
+    \ket{\Phi} = \ket{\alpha_1, \alpha_2, \dots, \alpha_n} \; .
+\end{equation}
+
+With this we have
+
+\begin{gather}
+    \hat{H}_0|\alpha_1,\alpha_2,\dots, \alpha_n\rangle = \sum_{\alpha_1'}\langle \alpha_1'|\hat{h}_0|\alpha_1\rangle
+    	|\alpha_1'\alpha_2 \dots \alpha_{n}\rangle \nonumber \\
+     + \sum_{\alpha_2'} \langle \alpha_2'|\hat{h}_0|\alpha_2\rangle
+    	|\alpha_1\alpha_2' \dots \alpha_{n}\rangle \nonumber \\
+     + \dots \\
+    + \sum_{\alpha_n'} \langle \alpha_n'|\hat{h}_0|\alpha_n\rangle
+    	|\alpha_1\alpha_2 \dots \alpha_{n}'\rangle \label{eq:2-28} \; ,
+\end{gather}
+
+where we go over each possible permutation of each particle. Furthermore, if we use the fact that we can write
+
+\begin{equation}
+    |\alpha_1\alpha_2 \dots \alpha_k' \dots \alpha_{n}\rangle = 
+    	a_{\alpha_k'}^{\dagger}  a_{\alpha_k} |\alpha_1\alpha_2 \dots \alpha_k \dots \alpha_{n}\rangle \label{eq:2-29} \; ,
+\end{equation}
+
+we can then shorten the expression to
+
+\begin{equation}
+    \hat{H}_0 = \sum_{\alpha\beta} \langle \alpha|\hat{h}_0|\beta\rangle a_\alpha^{\dagger} a_\beta \label{eq:2-30b} \; .
+\end{equation}
+
+As a generalized one-body operator, that preserves the number of particles, in second quantization. A two-body operator in coordinate space can be written as
+
+\begin{equation}
+    \hat{H}_I = \sum_{i < j} V(x_i,x_j) \label{eq:2-31} \; ,
+\end{equation}
+
+where $V$ is some interaction force between two particles. Using our Slater determinant again we have that 
+
+\begin{equation}
+    V(x_i,x_j) \psi_{\alpha_k}(x_i) \psi_{\alpha_l}(x_j) = \sum_{\alpha_k'\alpha_l'} 
+    	\psi_{\alpha_k}'(x_i)\psi_{\alpha_l}'(x_j) 
+    	\langle \alpha_k'\alpha_l'|\hat{v}|\alpha_k\alpha_l\rangle \label{eq:2-32} \;
+\end{equation}
+
+Once again summing over all possible permutations of each combination of two-particle pairs, we get
+\begin{equation}
+\begin{gathered}
+    H_I |\alpha_1\alpha_2\dots\alpha_n\rangle = \sum_{\alpha_1', \alpha_2'} \langle \alpha_1'\alpha_2'|\hat{v}|\alpha_1\alpha_2\rangle
+    	|\alpha_1'\alpha_2'\dots\alpha_n\rangle  \\
+     + \dots \\
+     + \sum_{\alpha_1', \alpha_n'} \langle \alpha_1'\alpha_n'|\hat{v}|\alpha_1\alpha_n\rangle
+    	|\alpha_1'\alpha_2\dots\alpha_n'\rangle  \\
+     + \dots \\
+     + \sum_{\alpha_2', \alpha_n'} \langle \alpha_2'\alpha_n'|\hat{v}|\alpha_2\alpha_n\rangle
+    	|\alpha_1\alpha_2'\dots\alpha_n'\rangle \\ 
+     + \dots \\
+     + \sum_{\alpha_{n-1}', \alpha_n'} \langle \alpha_{n-1}'\alpha_n'|\hat{v}|\alpha_{n-1}\alpha_n\rangle
+    	|\alpha_1\alpha_{n-1}'\dots\alpha_n'\rangle  \; .
+\end{gathered}
+\end{equation}
+
+Then, using the fact that
+
+\begin{equation}
+    a_{\alpha_k'}^{\dagger} a_{\alpha_l'}^{\dagger} a_{\alpha_l} a_{\alpha_k} 
+    	|\alpha_1\alpha_2\dots\alpha_k\dots\alpha_l\dots\alpha_n\rangle  = 
+    = |\alpha_1\alpha_2\dots\alpha_k'\dots\alpha_l'\dots\alpha_n\rangle \; ,\label{eq:2-35}
+\end{equation}
+
+we end up with
+\begin{equation}
+\begin{gathered}
+    H_I |\alpha_1\alpha_2\dots\alpha_n\rangle
+    = \sum_{\alpha_1', \alpha_2'} \langle \alpha_1'\alpha_2'|\hat{v}|\alpha_1\alpha_2\rangle
+    	a_{\alpha_1'}^{\dagger} a_{\alpha_2'}^{\dagger} a_{\alpha_2} a_{\alpha_1}
+    	|\alpha_1\alpha_2\dots\alpha_n\rangle  \\
+    = \sum_{\alpha, \beta, \gamma, \delta} ' \langle \alpha\beta|\hat{v}|\gamma\delta\rangle
+    	a^{\dagger}_\alpha a^{\dagger}_\beta a_\delta a_\gamma
+    	|\alpha_1\alpha_2\dots\alpha_n\rangle \label{eq:2-36} \; ,
+\end{gathered}
+\end{equation}
+
+where $\alpha, \; \beta$ are single-particle states while $\gamma, \; \delta$ are pairs of single-particle states. We can remove this distinction with the fact that
+
+\begin{equation}
+    \langle \alpha\beta|\hat{v}|\gamma\delta\rangle = \langle \beta\alpha|\hat{v}|\delta\gamma\rangle \label{eq:2-37} \; .
+\end{equation}
+
+And we end up with
+
+\begin{equation}
+    \hat{H}_I = \frac{1}{2} \sum_{\alpha\beta\gamma\delta} \langle \alpha\beta|\hat{v}|\gamma\delta\rangle
+    	a^{\dagger}_\alpha a^{\dagger}_\beta a_\delta a_\gamma \label{eq:2-39} \; ,
+\end{equation}
+
+where all indices are summed over single-particle states only.
+
+\subsection{Hamiltonian in second quantization}
+
+The way we calculate the local energy in practicality is connected to the hamiltonian's effect on a state. As such we will go over a concrete example to make our implementation exelanation, see \ref{section:imp_local} simpler to understand. For an example hamiltonian
+
+\begin{equation}
+    H =\sum_{p,\sigma} \varepsilon_{p,\sigma}\hc{a}{p,\sigma}\op{a}{p,\sigma} \; ,
+\end{equation}
+
+where $p$ is the number of fermions, here $2$, and $\sigma$ is the up or down spin. We can then apply the hamiltonian to each of the basis states.
+
+\begin{align}
+    H\ket{00} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right ) \ket{00}\\
+    H\ket{01} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right 
+    )\ket{01}\\
+    H\ket{10} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right ) \ket{10}\\
+    H\ket{11} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right ) \ket{11} \; .
+\end{align}
+
+The local energy of a state $\ket{s}$ is:
+
+\begin{equation}
+    E_{local} = \frac{\bra{s} H \ket{\psi}}{\braket{s}{\psi}}    \; ,
+\end{equation}
+
+

@@ -1,0 +1,836 @@
+PWD c:\Users\breit\Desktop\VScode\Quantum Boltzmann Machines and Autoencoders
+INPUT C:\Users\breit\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\breit\Desktop\VScode\Quantum Boltzmann Machines and Autoencoders\main.tex
+OUTPUT main.log
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT .\Utility\packages.tex
+INPUT .\Utility\packages.tex
+INPUT .\Utility\packages.tex
+INPUT .\Utility\packages.tex
+INPUT Utility\packages.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\braket\braket.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\braket\braket.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\minted\minted.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\minted\minted.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\fvextra\fvextra.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\fvextra\fvextra.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\upquote\upquote.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\upquote\upquote.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\lineno\lineno.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\lineno\lineno.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\shellesc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\shellesc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\shellesc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\ifplatform\ifplatform.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\catchfile\catchfile.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\xstring\xstring.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\framed\framed.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\framed\framed.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\linop\linop.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\linop\linop.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\bm.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\tools\bm.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT main.aex
+INPUT .\main.aex
+INPUT .\main.aex
+INPUT .\main.aux
+INPUT .\main.aux
+INPUT main.aux
+OUTPUT main.aux
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.out
+INPUT main.out
+OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib6.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\breit\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\abstract.tex
+INPUT .\abstract.tex
+INPUT .\abstract.tex
+INPUT .\abstract.tex
+INPUT abstract.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+OUTPUT main.toc
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\introduction.tex
+INPUT .\introduction.tex
+INPUT .\introduction.tex
+INPUT .\introduction.tex
+INPUT introduction.tex
+INPUT .\Theory\Theory.tex
+INPUT .\Theory\Theory.tex
+INPUT .\Theory\Theory.tex
+INPUT .\Theory\Theory.tex
+INPUT Theory\Theory.tex
+INPUT .\Theory\Machine Learning\machinelearning.tex
+INPUT .\Theory\Machine Learning\machinelearning.tex
+INPUT .\Theory\Machine Learning\machinelearning.tex
+INPUT .\Theory\Machine Learning\machinelearning.tex
+INPUT Theory\Machine Learning\machinelearning.tex
+INPUT .\Theory\Machine Learning\basicprinciples.tex
+INPUT .\Theory\Machine Learning\basicprinciples.tex
+INPUT .\Theory\Machine Learning\basicprinciples.tex
+INPUT .\Theory\Machine Learning\basicprinciples.tex
+INPUT Theory\Machine Learning\basicprinciples.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\Figures\Drawn\machinelearning\onenode.pdf
+INPUT .\Figures\Drawn\machinelearning\onenode.pdf
+INPUT .\Figures\Drawn\machinelearning\onenode.pdf
+INPUT .\Figures\Drawn\machinelearning\onenode.pdf
+INPUT .\Figures\Drawn\machinelearning\onenode.pdf
+INPUT .\Figures\Drawn\machinelearning\onenode.pdf
+INPUT .\Figures\Drawn\machinelearning\inputoutputlayer.pdf
+INPUT .\Figures\Drawn\machinelearning\inputoutputlayer.pdf
+INPUT .\Figures\Drawn\machinelearning\inputoutputlayer.pdf
+INPUT .\Figures\Drawn\machinelearning\inputoutputlayer.pdf
+INPUT .\Figures\Drawn\machinelearning\inputoutputlayer.pdf
+INPUT .\Figures\Drawn\machinelearning\inputoutputlayer.pdf
+INPUT .\Figures\Plots\machinelearning\curve1.pdf
+INPUT .\Figures\Plots\machinelearning\curve1.pdf
+INPUT .\Figures\Plots\machinelearning\curve1.pdf
+INPUT .\Figures\Plots\machinelearning\curve1.pdf
+INPUT .\Figures\Plots\machinelearning\curve1.pdf
+INPUT .\Figures\Plots\machinelearning\curve1.pdf
+INPUT .\Figures\Plots\machinelearning\curve2.pdf
+INPUT .\Figures\Plots\machinelearning\curve2.pdf
+INPUT .\Figures\Plots\machinelearning\curve2.pdf
+INPUT .\Figures\Plots\machinelearning\curve2.pdf
+INPUT .\Figures\Plots\machinelearning\curve2.pdf
+INPUT .\Figures\Plots\machinelearning\curve2.pdf
+INPUT .\Figures\Plots\machinelearning\curve0.pdf
+INPUT .\Figures\Plots\machinelearning\curve0.pdf
+INPUT .\Figures\Plots\machinelearning\curve0.pdf
+INPUT .\Figures\Plots\machinelearning\curve0.pdf
+INPUT .\Figures\Plots\machinelearning\curve0.pdf
+INPUT .\Figures\Plots\machinelearning\curve0.pdf
+INPUT .\Figures\Drawn\machinelearning\generalnetwork.pdf
+INPUT .\Figures\Drawn\machinelearning\generalnetwork.pdf
+INPUT .\Figures\Drawn\machinelearning\generalnetwork.pdf
+INPUT .\Figures\Drawn\machinelearning\generalnetwork.pdf
+INPUT .\Figures\Drawn\machinelearning\generalnetwork.pdf
+INPUT .\Figures\Drawn\machinelearning\generalnetwork.pdf
+INPUT .\Theory\Machine Learning\boltzmannmachine.tex
+INPUT .\Theory\Machine Learning\boltzmannmachine.tex
+INPUT .\Theory\Machine Learning\boltzmannmachine.tex
+INPUT .\Theory\Machine Learning\boltzmannmachine.tex
+INPUT Theory\Machine Learning\boltzmannmachine.tex
+INPUT .\Figures\Drawn\machinelearning\boltzmann1.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzmann1.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzmann1.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzmann1.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzmann1.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzmann1.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzrest.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzrest.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzrest.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzrest.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzrest.pdf
+INPUT .\Figures\Drawn\machinelearning\boltzrest.pdf
+INPUT .\Theory\Machine Learning\montecarlosampling.tex
+INPUT .\Theory\Machine Learning\montecarlosampling.tex
+INPUT .\Theory\Machine Learning\montecarlosampling.tex
+INPUT .\Theory\Machine Learning\montecarlosampling.tex
+INPUT Theory\Machine Learning\montecarlosampling.tex
+INPUT .\Theory\Machine Learning\Controls and Errors.tex
+INPUT .\Theory\Machine Learning\Controls and Errors.tex
+INPUT .\Theory\Machine Learning\Controls and Errors.tex
+INPUT .\Theory\Machine Learning\Controls and Errors.tex
+INPUT Theory\Machine Learning\Controls and Errors.tex
+INPUT .\Theory\Quantum Mechanics\quantummechanics.tex
+INPUT .\Theory\Quantum Mechanics\quantummechanics.tex
+INPUT .\Theory\Quantum Mechanics\quantummechanics.tex
+INPUT .\Theory\Quantum Mechanics\quantummechanics.tex
+INPUT Theory\Quantum Mechanics\quantummechanics.tex
+INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
+INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
+INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
+INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
+INPUT Theory\Quantum Mechanics\basicprinciples.tex
+INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
+INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
+INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
+INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
+INPUT Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
+INPUT .\Theory\Quantum Mechanics\Entanglement.tex
+INPUT .\Theory\Quantum Mechanics\Entanglement.tex
+INPUT .\Theory\Quantum Mechanics\Entanglement.tex
+INPUT .\Theory\Quantum Mechanics\Entanglement.tex
+INPUT Theory\Quantum Mechanics\Entanglement.tex
+INPUT .\Theory\Many-Body Physics\manybodymethods.tex
+INPUT .\Theory\Many-Body Physics\manybodymethods.tex
+INPUT .\Theory\Many-Body Physics\manybodymethods.tex
+INPUT .\Theory\Many-Body Physics\manybodymethods.tex
+INPUT Theory\Many-Body Physics\manybodymethods.tex
+INPUT .\Theory\Many-Body Physics\Basic Principles.tex
+INPUT .\Theory\Many-Body Physics\Basic Principles.tex
+INPUT .\Theory\Many-Body Physics\Basic Principles.tex
+INPUT .\Theory\Many-Body Physics\Basic Principles.tex
+INPUT Theory\Many-Body Physics\Basic Principles.tex
+INPUT .\Theory\Many-Body Physics\secondquantization.tex
+INPUT .\Theory\Many-Body Physics\secondquantization.tex
+INPUT .\Theory\Many-Body Physics\secondquantization.tex
+INPUT .\Theory\Many-Body Physics\secondquantization.tex
+INPUT Theory\Many-Body Physics\secondquantization.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
+INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
+INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
+INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
+INPUT Theory\Many-Body Physics\Methods and Algorithms.tex
+INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
+INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
+INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
+INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
+INPUT Theory\Many-Body Physics\The Lipkin Model.tex
+INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
+INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
+INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
+INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
+INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
+INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
+INPUT .\Figures\Drawn\Lipkin\lipkinexcited.pdf
+INPUT .\Figures\Drawn\Lipkin\lipkinexcited.pdf
+INPUT .\Figures\Drawn\Lipkin\lipkinexcited.pdf
+INPUT .\Figures\Drawn\Lipkin\lipkinexcited.pdf
+INPUT .\Figures\Drawn\Lipkin\lipkinexcited.pdf
+INPUT .\Figures\Drawn\Lipkin\lipkinexcited.pdf
+INPUT .\Figures\Drawn\Lipkin\j=1.pdf
+INPUT .\Figures\Drawn\Lipkin\j=1.pdf
+INPUT .\Figures\Drawn\Lipkin\j=1.pdf
+INPUT .\Figures\Drawn\Lipkin\j=1.pdf
+INPUT .\Figures\Drawn\Lipkin\j=1.pdf
+INPUT .\Figures\Drawn\Lipkin\j=1.pdf
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy9.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT .\Figures\Drawn\Lipkin\j=2.pdf
+INPUT .\Figures\Drawn\Lipkin\j=2.pdf
+INPUT .\Figures\Drawn\Lipkin\j=2.pdf
+INPUT .\Figures\Drawn\Lipkin\j=2.pdf
+INPUT .\Figures\Drawn\Lipkin\j=2.pdf
+INPUT .\Figures\Drawn\Lipkin\j=2.pdf
+INPUT .\Figures\Plots\Lipkin\J2_true.pdf
+INPUT .\Figures\Plots\Lipkin\J2_true.pdf
+INPUT .\Figures\Plots\Lipkin\J2_true.pdf
+INPUT .\Figures\Plots\Lipkin\J2_true.pdf
+INPUT .\Figures\Plots\Lipkin\J2_true.pdf
+INPUT .\Figures\Plots\Lipkin\J2_true.pdf
+INPUT .\Figures\Plots\Lipkin\J1_true.pdf
+INPUT .\Figures\Plots\Lipkin\J1_true.pdf
+INPUT .\Figures\Plots\Lipkin\J1_true.pdf
+INPUT .\Figures\Plots\Lipkin\J1_true.pdf
+INPUT .\Figures\Plots\Lipkin\J1_true.pdf
+INPUT .\Figures\Plots\Lipkin\J1_true.pdf
+INPUT .\Theory\Quantum Computing\quantumcomputing.tex
+INPUT .\Theory\Quantum Computing\quantumcomputing.tex
+INPUT .\Theory\Quantum Computing\quantumcomputing.tex
+INPUT .\Theory\Quantum Computing\quantumcomputing.tex
+INPUT Theory\Quantum Computing\quantumcomputing.tex
+INPUT .\Theory\Quantum Computing\basic principles.tex
+INPUT .\Theory\Quantum Computing\basic principles.tex
+INPUT .\Theory\Quantum Computing\basic principles.tex
+INPUT .\Theory\Quantum Computing\basic principles.tex
+INPUT Theory\Quantum Computing\basic principles.tex
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
+INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
+INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
+INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
+INPUT Theory\Quantum Computing\Quantum Circuits and Programming.tex
+INPUT .\Figures\Circuits\Theory\basecircuit.pdf
+INPUT .\Figures\Circuits\Theory\basecircuit.pdf
+INPUT .\Figures\Circuits\Theory\basecircuit.pdf
+INPUT .\Figures\Circuits\Theory\basecircuit.pdf
+INPUT .\Figures\Circuits\Theory\basecircuit.pdf
+INPUT .\Figures\Circuits\Theory\basecircuit.pdf
+INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
+INPUT .\Figures\Circuits\Theory\zm.pdf
+INPUT .\Figures\Circuits\Theory\zm.pdf
+INPUT .\Figures\Circuits\Theory\zm.pdf
+INPUT .\Figures\Circuits\Theory\zm.pdf
+INPUT .\Figures\Circuits\Theory\zm.pdf
+INPUT .\Figures\Circuits\Theory\zm.pdf
+INPUT .\Figures\Circuits\Theory\xm.pdf
+INPUT .\Figures\Circuits\Theory\xm.pdf
+INPUT .\Figures\Circuits\Theory\xm.pdf
+INPUT .\Figures\Circuits\Theory\xm.pdf
+INPUT .\Figures\Circuits\Theory\xm.pdf
+INPUT .\Figures\Circuits\Theory\xm.pdf
+INPUT .\Figures\Circuits\Theory\ym.pdf
+INPUT .\Figures\Circuits\Theory\ym.pdf
+INPUT .\Figures\Circuits\Theory\ym.pdf
+INPUT .\Figures\Circuits\Theory\ym.pdf
+INPUT .\Figures\Circuits\Theory\ym.pdf
+INPUT .\Figures\Circuits\Theory\ym.pdf
+INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
+INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
+INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
+INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
+INPUT Theory\Quantum Computing\entangled qubits and bell states.tex
+INPUT .\Figures\Circuits\Theory\2zero.pdf
+INPUT .\Figures\Circuits\Theory\2zero.pdf
+INPUT .\Figures\Circuits\Theory\2zero.pdf
+INPUT .\Figures\Circuits\Theory\2zero.pdf
+INPUT .\Figures\Circuits\Theory\2zero.pdf
+INPUT .\Figures\Circuits\Theory\2zero.pdf
+INPUT .\Figures\Circuits\Theory\2hadamard.pdf
+INPUT .\Figures\Circuits\Theory\2hadamard.pdf
+INPUT .\Figures\Circuits\Theory\2hadamard.pdf
+INPUT .\Figures\Circuits\Theory\2hadamard.pdf
+INPUT .\Figures\Circuits\Theory\2hadamard.pdf
+INPUT .\Figures\Circuits\Theory\2hadamard.pdf
+INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
+INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
+INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
+INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
+INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
+INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
+INPUT .\Figures\Circuits\Theory\00Bell.pdf
+INPUT .\Figures\Circuits\Theory\00Bell.pdf
+INPUT .\Figures\Circuits\Theory\00Bell.pdf
+INPUT .\Figures\Circuits\Theory\00Bell.pdf
+INPUT .\Figures\Circuits\Theory\00Bell.pdf
+INPUT .\Figures\Circuits\Theory\00Bell.pdf
+INPUT .\Figures\Circuits\Theory\10Bell.pdf
+INPUT .\Figures\Circuits\Theory\10Bell.pdf
+INPUT .\Figures\Circuits\Theory\10Bell.pdf
+INPUT .\Figures\Circuits\Theory\10Bell.pdf
+INPUT .\Figures\Circuits\Theory\10Bell.pdf
+INPUT .\Figures\Circuits\Theory\10Bell.pdf
+INPUT .\Figures\Circuits\Theory\01Bell.pdf
+INPUT .\Figures\Circuits\Theory\01Bell.pdf
+INPUT .\Figures\Circuits\Theory\01Bell.pdf
+INPUT .\Figures\Circuits\Theory\01Bell.pdf
+INPUT .\Figures\Circuits\Theory\01Bell.pdf
+INPUT .\Figures\Circuits\Theory\01Bell.pdf
+INPUT .\Figures\Circuits\Theory\11Bell.pdf
+INPUT .\Figures\Circuits\Theory\11Bell.pdf
+INPUT .\Figures\Circuits\Theory\11Bell.pdf
+INPUT .\Figures\Circuits\Theory\11Bell.pdf
+INPUT .\Figures\Circuits\Theory\11Bell.pdf
+INPUT .\Figures\Circuits\Theory\11Bell.pdf
+INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
+INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
+INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
+INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
+INPUT Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
+INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
+INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
+INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
+INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
+INPUT Theory\Quantum Computing\Variational Quantum Eigensolver.tex
+INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
+INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
+INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
+INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
+INPUT Theory\Quantum Machine Learning\quantummachinelearning.tex
+INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
+INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
+INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
+INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
+INPUT Theory\Quantum Machine Learning\Quantum Nodes.tex
+INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
+INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
+INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
+INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
+INPUT Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
+INPUT .\Implementation\Implementation.tex
+INPUT .\Implementation\Implementation.tex
+INPUT .\Implementation\Implementation.tex
+INPUT .\Implementation\Implementation.tex
+INPUT Implementation\Implementation.tex
+INPUT .\Implementation\Qiskit\qiskit.tex
+INPUT .\Implementation\Qiskit\qiskit.tex
+INPUT .\Implementation\Qiskit\qiskit.tex
+INPUT .\Implementation\Qiskit\qiskit.tex
+INPUT Implementation\Qiskit\qiskit.tex
+OUTPUT main.pyg
+INPUT .\_minted-main\friendly.pygstyle
+INPUT .\_minted-main\friendly.pygstyle
+INPUT _minted-main\friendly.pygstyle
+INPUT .\main.pyg
+INPUT .\_minted-main\1A21880461BE21D88C35EE2F5C4401BFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\1A21880461BE21D88C35EE2F5C4401BFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\1A21880461BE21D88C35EE2F5C4401BFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Figures\Circuits\implementation\1zero.pdf
+INPUT .\Figures\Circuits\implementation\1zero.pdf
+INPUT .\Figures\Circuits\implementation\1zero.pdf
+INPUT .\Figures\Circuits\implementation\1zero.pdf
+INPUT .\Figures\Circuits\implementation\1zero.pdf
+INPUT .\Figures\Circuits\implementation\1zero.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\18A892164874E8E86A370A74075AF568CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\18A892164874E8E86A370A74075AF568CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\18A892164874E8E86A370A74075AF568CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Figures\Circuits\implementation\init1.pdf
+INPUT .\Figures\Circuits\implementation\init1.pdf
+INPUT .\Figures\Circuits\implementation\init1.pdf
+INPUT .\Figures\Circuits\implementation\init1.pdf
+INPUT .\Figures\Circuits\implementation\init1.pdf
+INPUT .\Figures\Circuits\implementation\init1.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\72931F2B35C43A996FD942BA6C05E8C8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\72931F2B35C43A996FD942BA6C05E8C8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\72931F2B35C43A996FD942BA6C05E8C8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmitt10.tfm
+INPUT .\Figures\Circuits\implementation\hada1.pdf
+INPUT .\Figures\Circuits\implementation\hada1.pdf
+INPUT .\Figures\Circuits\implementation\hada1.pdf
+INPUT .\Figures\Circuits\implementation\hada1.pdf
+INPUT .\Figures\Circuits\implementation\hada1.pdf
+INPUT .\Figures\Circuits\implementation\hada1.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\54A405E83EA4C477BE5F75AD8F940FC6CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\54A405E83EA4C477BE5F75AD8F940FC6CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\54A405E83EA4C477BE5F75AD8F940FC6CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\40FB6D58CAEA376CF02A210374B881E2CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\40FB6D58CAEA376CF02A210374B881E2CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\40FB6D58CAEA376CF02A210374B881E2CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Figures\Circuits\implementation\cx2.pdf
+INPUT .\Figures\Circuits\implementation\cx2.pdf
+INPUT .\Figures\Circuits\implementation\cx2.pdf
+INPUT .\Figures\Circuits\implementation\cx2.pdf
+INPUT .\Figures\Circuits\implementation\cx2.pdf
+INPUT .\Figures\Circuits\implementation\cx2.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\44F27DCAD73FDDCF411293B126A7E2ECCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\44F27DCAD73FDDCF411293B126A7E2ECCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\44F27DCAD73FDDCF411293B126A7E2ECCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Figures\Circuits\implementation\2measure.pdf
+INPUT .\Figures\Circuits\implementation\2measure.pdf
+INPUT .\Figures\Circuits\implementation\2measure.pdf
+INPUT .\Figures\Circuits\implementation\2measure.pdf
+INPUT .\Figures\Circuits\implementation\2measure.pdf
+INPUT .\Figures\Circuits\implementation\2measure.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\A9E463FBE343BFE726E46D3136867AD1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\A9E463FBE343BFE726E46D3136867AD1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\A9E463FBE343BFE726E46D3136867AD1CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\BE6A4CC5CC941DB494399039F96DC9CECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\BE6A4CC5CC941DB494399039F96DC9CECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\BE6A4CC5CC941DB494399039F96DC9CECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\6E41D75022629A2B976BDFC0D556E6AFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\6E41D75022629A2B976BDFC0D556E6AFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\6E41D75022629A2B976BDFC0D556E6AFCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\F1C18ACB6CD040A96253BB4503D93590CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\F1C18ACB6CD040A96253BB4503D93590CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\F1C18ACB6CD040A96253BB4503D93590CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\115D25D2A7EAEA2B9306ED730D9136C1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\115D25D2A7EAEA2B9306ED730D9136C1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\115D25D2A7EAEA2B9306ED730D9136C1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Figures\Circuits\implementation\y-basis.pdf
+INPUT .\Figures\Circuits\implementation\y-basis.pdf
+INPUT .\Figures\Circuits\implementation\y-basis.pdf
+INPUT .\Figures\Circuits\implementation\y-basis.pdf
+INPUT .\Figures\Circuits\implementation\y-basis.pdf
+INPUT .\Figures\Circuits\implementation\y-basis.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\698A39ECC0DF24D48015E55B2AB3D919CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\698A39ECC0DF24D48015E55B2AB3D919CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\698A39ECC0DF24D48015E55B2AB3D919CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Figures\Circuits\implementation\2mesy.pdf
+INPUT .\Figures\Circuits\implementation\2mesy.pdf
+INPUT .\Figures\Circuits\implementation\2mesy.pdf
+INPUT .\Figures\Circuits\implementation\2mesy.pdf
+INPUT .\Figures\Circuits\implementation\2mesy.pdf
+INPUT .\Figures\Circuits\implementation\2mesy.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\9050195CD9A3513C23439C4E98EC0B0ACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\9050195CD9A3513C23439C4E98EC0B0ACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\9050195CD9A3513C23439C4E98EC0B0ACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
+INPUT Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
+INPUT Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
+INPUT Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
+INPUT Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
+INPUT Implementation\Restricted Boltzmann Machine\Machine Structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
+INPUT Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
+INPUT Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
+INPUT Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
+INPUT Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
+INPUT Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
+INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
+INPUT Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
+INPUT .\main.bbl
+INPUT .\main.bbl
+INPUT main.bbl
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT main.aux
+INPUT .\main.out
+INPUT .\main.out
+INPUT .\main.pyg
+INPUT .\main.pyg
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmmib7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmmib7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

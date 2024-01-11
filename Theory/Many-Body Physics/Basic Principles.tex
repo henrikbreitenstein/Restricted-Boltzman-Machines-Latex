@@ -1,0 +1,35 @@
+\section{Basic Principles}
+\subsection{Slater Determinants}
+
+Given a system with 2 fermions. The first particle particle has quantum numbers $i$ and spin value $\alpha$, while the second particle has quantum numbers $k$ and spin value $\beta$. Since both particles are indistinguishable form each other, we have no way of knowing which particle is where. As a result the wavefunction needs to reflect this by being indifferent to particle permutation. A naive product wavefunction of the two fermions would look like
+
+\begin{equation}
+    \ket{\psi\left ( x_1, x_2 \right )} = \varphi_{i\alpha} (x_1)\varphi_{k\beta}(x_2) \; .
+\end{equation}
+
+If we try to switch the positions of $x_1$ and $x_2$ we get that
+
+\begin{equation}
+    \ket{\psi\left ( x_2, x_1 \right )} = \varphi_{i\alpha} (x_2)\varphi_{k\beta}(x_1) \; ,
+\end{equation}
+
+which fails the anti-symmetric requirement for fermionic wavefunctions, which makes them distinguishable from each other. Instead we would want a wave function accounts for both scenarios in the first place
+
+\begin{equation}
+    \ket{\psi\left ( \mathbf{x}_1, \mathbf{x}_2 \right )} = \frac{1}{\sqrt{2}} \left ( \varphi_{i\alpha} (x_1)\varphi_{k\beta}(x_2) - \varphi_{i\alpha} (x_2)\varphi_{k\beta}(x_1)\right ) \; ,
+\end{equation}
+
+where the wavefunction is a normalized combination of the two product wavefunctions. Here we have the antisymmetry
+
+\begin{equation}
+    \ket{\psi\left ( \mathbf{x}_1, \mathbf{x}_2 \right )} = - \ket{\psi\left ( x_2, x_1 \right )} \; .
+\end{equation}
+
+Which can be further generalized for a system with $N$ fermions. 
+
+\begin{equation}\label{eq:slatdif}
+    \psi(\mathbf{x}_1, \mathbf{x}_2, \ldots, \mathbf{x}_N)=\dfrac{1}{\sqrt{N!}} \left| \begin{matrix} \varphi_1(\mathbf{x}_1) & \varphi_2(\mathbf{x}_1) & \cdots & \varphi_N(\mathbf{x}_1) \\ \varphi_1(\mathbf{x}_2) & \varphi_2(\mathbf{x}_2) & \cdots & \varphi_N(\mathbf{x}_2) \\ \vdots & \vdots & \ddots & \vdots \\ \varphi_1(\mathbf{x}_N) & \varphi_2(\mathbf{x}_N) & \cdots & \varphi_N(\mathbf{x}_N) \end{matrix} \right| \; .
+\end{equation}
+
+
+where it gets its name from.

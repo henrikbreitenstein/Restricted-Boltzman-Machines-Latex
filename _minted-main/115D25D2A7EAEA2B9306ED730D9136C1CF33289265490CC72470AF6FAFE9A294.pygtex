@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{quantum\PYGZus{}reg} \PYG{o}{=} \PYG{n}{qk}\PYG{o}{.}\PYG{n}{QuantumRegistry}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{n}{y\PYGZus{}basis} \PYG{o}{=} \PYG{n}{qk}\PYG{o}{.}\PYG{n}{QuantumCircuit}\PYG{p}{(}\PYG{n}{quantum\PYGZus{}reg}\PYG{p}{)}
+    \PYG{n}{y\PYGZus{}basis}\PYG{o}{.}\PYG{n}{sdg}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{y\PYGZus{}basis}\PYG{o}{.}\PYG{n}{h}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+\end{Verbatim}

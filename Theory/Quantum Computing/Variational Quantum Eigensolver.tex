@@ -1,0 +1,23 @@
+\section{Variational Quantum Eigensolver}
+
+Essentially the Varitonal Quantum Eigensolver, abrivated VQE, is a method to find the ground state of a Hamiltonian by variation of the state the system is in. Starting with a Hamiltonian in Pauli form:
+
+\begin{equation}
+\op{H} = \sum_i c_i \op{P}{i} \;
+\end{equation}
+where $c_i$ is the coefficient of the Pauli operator $\op{P}{i}$. We then have a general state $\ket{\psi}$ which is dependent on the angle to the z-axis, see \ref{fig:blochsphere}, for each qubit in the system.
+
+\begin{equation}
+   \ket{\psi \left ( \theta_1, \dots, \theta_N \right )} = \ket{\psi \left ( \boldsymbol{\theta} \right )} \; .
+\end{equation}
+
+Then the energy of that state is the expectation value
+
+\begin{equation}
+    E\left ( \boldsymbol{\theta} \right ) = \left < \op{H} \right > = \bra{\psi \left ( \boldsymbol{\theta} \right )} c_i \op{P}{i} \ket{\psi \left ( \boldsymbol{\theta} \right )} = \sum_i c_i \bra{\psi \left ( \boldsymbol{\theta} \right )} \op{P}{i} \ket{\psi \left ( \boldsymbol{\theta} \right )} \; .
+\end{equation}
+
+By variating the angles of $\boldsymbol{\theta}$ and checking the energy of each state we can then find the lowest energy state, which would then be the ground state of the system. Going through an exhaustive list of states would be extremely taxing computationally, especially with higher number of qubits. And in this case we shall see that it is unnecessary.
+
+\subsection{Optimizing the choice of state}
+

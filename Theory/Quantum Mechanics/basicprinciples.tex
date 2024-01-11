@@ -1,0 +1,92 @@
+\section{Basic Principles}
+\subsection{Wavefunction and superposition}
+
+A quantum state is described with the help of a wavefunction, which for one dimension we write as
+
+$$\psi(x): \mathbb{R}\rightarrow\mathbb{C} \; .$$
+
+In and of itself the wavefunction does not have a good physical interpretation, but the squared absolute value becomes a probability distribution, such that
+
+\begin{equation}
+    P(x) = |\psi(x)|^2 \; ,
+\end{equation}
+
+meaning that $|\psi(x)|^2$ is the probability of finding the particle at position $x$. The wavefunction therefor needs to be normalized, such that 
+
+\begin{equation}
+    \int_{-\inf}^{\inf}\mathrm{d}x \psi^*\psi = 1 \; .
+\end{equation}
+
+It then also means the particle is in a undetermined position before measurement. The quantum state is a combination of all the possible positions it can be in, weighted by $\psi(x)$, in intervals for a continuum of eigenstates $\ket{\phi}$ 
+
+\begin{equation}
+    \ket{\psi} = \int\mathrm{d}x \psi(x)\ket{\phi} \; .
+\end{equation}
+
+And for a discrete set of eigenstates
+
+\begin{equation}
+    \ket{\psi} = \sum_i \psi(x_i)\ket{\phi} \; .
+\end{equation}
+
+Such a state $\ket{\psi}$ is called a superposition.
+
+\subsection{Operators and the Schrödinger equation}
+
+Affecting the wavefunction is done mathematically through operators. An operator maps a state to another, transforming the wavefunction. For a generalized operator $\hat{O}$ and the state $\ket{\psi}$ we have
+
+\begin{equation}
+    \hat{O}\ket{\psi} = \ket{\psi'} \; ,
+\end{equation}
+
+where $\ket{\psi'}$ is a new state. When an operator acts on a eigenstate:
+
+\begin{equation}
+    \hat{O}\ket{\phi} = \varepsilon\ket{\phi} \; ,
+\end{equation}
+
+the eigenvalue $\varepsilon$ is a quantity of what $\hat{O}$ represents. For this quantity to be something physically measurable, the operator needs to be hermitian 
+
+\begin{equation}
+    \hat{O} = \hc{O} \; ,
+\end{equation}
+
+such that $\varepsilon \in \mathbb{R}$. An important observable operator is the hamiltonian, representing the energy of the system. The hamiltonian maps a state to its energy distribution, indicating its time evolution which is dictated by the Schrödinger equation:
+
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t} |\Psi(t)\rangle = \hat{H} |\Psi(t)\rangle \; ,
+\end{equation}
+
+where $t$ is time. Eigenstates of the hamiltonian are the stable energy states of the system
+
+\begin{equation}
+    H\ket{\psi_n} = E_n\ket{\psi_n} \; ,
+\end{equation}
+
+where $E_n$ is the energy of the state.
+
+\subsection{Global and local energy}
+
+The global energy is the energy of the whole system, the possible are values of energy that can be measured. This is the energy eigenvalues of the hamiltonian:
+
+\begin{equation}
+    E_n = \frac{\bra{\psi_n}H\ket{\psi_n}}{\braket{\psi_n}{\psi_n}} \; .
+\end{equation}
+
+The local energy is, however, the energy associated with any particular basis state:
+
+\begin{equation}
+    E_{\text{loc}}(\phi) = \frac{\bra{\phi}H\ket{\psi}}{\braket{\phi}{\psi}} \; ,
+\end{equation}
+
+where then $\phi$ is the basis state, a specific point in the space of the system, and $\psi$ is the state of the system.
+
+\subsection{Pauli Exlusion Principle}
+
+The Pauli Exclusion Principle says that, within a quantum system, identical fermions are limited to one per quantum state. This is expressed mathematically with a anti-symmetric wavefunction:
+
+\begin{equation}
+    \Psi(\dots,x_i,\dots,x_j,\dots) =-\Psi(\dots,x_j,\dots,x_i,\dots) \; ,
+\end{equation}
+
+where $x_i$ and $x_j$ is two particles being switched.

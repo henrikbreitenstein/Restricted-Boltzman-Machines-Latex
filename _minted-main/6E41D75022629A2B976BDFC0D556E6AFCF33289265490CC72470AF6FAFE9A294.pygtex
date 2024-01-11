@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{counts} \PYG{o}{=} \PYG{n}{job}\PYG{o}{.}\PYG{n}{result}\PYG{p}{()}\PYG{o}{.}\PYG{n}{get\PYGZus{}counts}\PYG{p}{()}
+\end{Verbatim}

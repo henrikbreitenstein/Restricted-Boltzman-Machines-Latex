@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{circuit\PYGZus{}copy} \PYG{o}{=} \PYG{n}{circuit}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+    \PYG{n}{circuit\PYGZus{}copy}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{y\PYGZus{}basis}\PYG{p}{,} \PYG{n}{qubits} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{)}
+\end{Verbatim}
