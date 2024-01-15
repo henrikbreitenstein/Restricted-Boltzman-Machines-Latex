@@ -64,13 +64,10 @@
 \contentsline {section}{\numberline {7.2}Measurement and execution}{48}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Copy and append}{48}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Restricted Boltzmann Machine}{50}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Binary-Binary RMB}{50}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Optimization Methods}{50}{section.8.2}%
-\contentsline {section}{\numberline {8.3}The Blocking Method}{50}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Machine Structure}{50}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Machine Parameter Optimazation}{50}{section.8.5}%
-\contentsline {chapter}{\numberline {9}Variational Quantum Boltzmann Machine}{51}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Initialization}{51}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Optimization of the VarQBM}{51}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Quantum Machine Structure}{51}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Quantum Machine Parameter Optimization}{51}{section.9.4}%
+\contentsline {section}{\numberline {8.1}Calculation of the local energy}{50}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The Lipkin model}{50}{subsection.8.1.1}%
+\contentsline {chapter}{\numberline {9}Variational Quantum Boltzmann Machine}{53}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Initialization}{53}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Optimization of the VarQBM}{53}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Quantum Machine Structure}{53}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Quantum Machine Parameter Optimization}{53}{section.9.4}%

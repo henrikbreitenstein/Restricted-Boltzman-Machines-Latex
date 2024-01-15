@@ -1,0 +1,73 @@
+\section{Calculation of the local energy}
+
+We know that the local energy of a particular sample state $\ket{s}$ can be calculated as
+
+\begin{equation}
+\begin{equation}
+  E_{loc} = \displaystyle\frac{\bra{s}H\ket{\psi_{rbm}}}{\braket{s}{\psi_{rbm}}} \; ,
+  \label{eq:local_imp}
+\end{equation}
+
+but here we will explain in more detail how this is done for the each of the different systems we are looking at. First of all it is important to remember the structure of the input to our function calculating the local energy. We want to vectorize the calculations as much as possible so the input will be all our samples, taken with the Gibbs or Metropolis-Hastings algorithm, together in one array:
+
+Our operations will then be done on all the samples at once, decreasing computation time by vectorization as well as opening up for use of the GPU. For reference we will call the input array of all the samples $\ket{s}$ as $\mathbf{S}$. To use the definition of the local energy, \ref{eq:local_imp}, we need to extract the machine state from our set of samples. As described in \ref{sec:nnqs} we check the distribution by extracting all unique states in our set of samples and setting the amplitudes as the square root of their relative occurrence in the set, presuming that all are positive definite.
+
+\\...\\
+
+We then have a approximation of our machine state $\ket{\psi}$. The next step of using each state in the sample set is varies with the hamiltonian of the system.
+
+\subsection{The Lipkin model}
+
+The Lipkin model hamiltonian is defined as
+
+\begin{equation} 
+    H = \sum_{p\sigma} \left ( \frac{1}{2} \sigma \varepsilon \right ) \hc{a}{p\sigma}\op{a}{p\sigma} - \frac{V}{2}\sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'\sigma} \op{a}{p'-\sigma}\op{a}{p-\sigma} - \frac{W}{2} \sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'-\sigma} \op{a}{p'\sigma}\op{a}{p-\sigma} \; , 
+\end{equation}
+
+For a more structured explanation we separate the hamiltonian in three parts:
+
+\begin{align}
+  H_{\varepsilon} &= \sum_{p\sigma} \left ( \frac{1}{2} \sigma \varepsilon \right ) \hc{a}{p\sigma}\op{a}{p\sigma}\\ 
+  H_V &= \frac{V}{2}\sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'\sigma} \op{a}{p'-\sigma}\op{a}{p-\sigma}\\
+  H_W &= \frac{W}{2} \sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'-\sigma} \op{a}{p'\sigma}\op{a}{p-\sigma}  \; .
+  \label{eq:LMG_split_H}
+\end{align}
+
+ A state $\ket{b}$ contributes for the different parts as follows:
+
+\begin{itemize}
+  \item $H_{\varepsilon}$ - the same state $\ket{b}$.
+  \item $H_V$ - states that are a excited or deexcited pair away from the state $\ket{b}$.
+  \item $H_W$ - states one excited or deexcited particle away from $\ket{b}$.
+\end{itemize}
+
+For the $H_{\varepsilon}$ contribution we determine which samples matches which parts of the machine state $\ket{\psi_{rbm}}$. We create a mask showing which basis state each sample matches with, named $\vec{mask}$.
+
+We then have an array of the machine states amplitudes multiplied by $\varepsilon$. Applying $\vec{mask}$ to this array then selects the correct value for each sample without having to calculate duplicates more than once. We then have the $H_{\varepsilon}$ contribution for each sample directly:
+
+\\...\\
+
+For the $H_V$ contributions we first need to find each possible one-pair-different basis states that matches with a part of the machine state. Since the machine state is defined as the sample distribution we can check what states are one-pair-different from each other by doing the following:
+
+\\...\\
+
+We check each of the unique states, $\ket{b_i}$, with all the other unique states, $\ket{b_j}$, and see if there are a one-pair-difference between them, setting the element $\left (i, j \right )$ to $1$ if that is the case. As a result we end up with a $N\times N$ matrix, $\mathbf{V}$, where $N$ is the number of unique states. Each pair represents the element
+\begin{equation}
+  \frac{\bra{b_i}H_V\ket{b_j}}{\braket{b_i}{\psi_{rbm}}} = \frac{V\alpha_j}{\alpha_i} \; ,
+  \label{eq:LMG_imp_V_cont}
+\end{equation}
+
+where $\alpha_i$ and $\alpha_j$ is respectively the amplitude of the basis state $\ket{b_i}$ and $\ket{b_j}$ in the machine state $\psi_{rbm}$. This means we need to scale our matrix $\mathbf{V}$ with the interaction strength $V$. Then scale each row $i$ with $\frac{1}{\alpha_i}$ and each column $j$ with the corresponding states amplitude $\alpha_j$. Each row then represents the elements of 
+
+$$ E_{loc, V}(\ket{b_i}) = \frac{\bra{b_i}H_V\ket{\psi_{rbm}}}{\braket{b_i}{\psi_{rbm}}} \; , $$
+
+and since the amplitudes are already assumed to be positive definite, we can then calculate the total contribution of the basis state $\ket{b_i}$:
+
+\begin{equation}
+ E_{loc, V}(\ket{b_i})= \sum_j \mathbf{V}_{i,j} \; ,
+\end{equation}
+which we can then apply $\vec{mask}$ to and get the $H_V$ contribution for each sample:
+
+\\...\\
+
+

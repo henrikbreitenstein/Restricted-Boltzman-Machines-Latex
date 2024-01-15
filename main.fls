@@ -1,6 +1,6 @@
-PWD c:\Users\breit\Desktop\VScode\Quantum Boltzmann Machines and Autoencoders
+PWD C:\Users\breit\_BASE\Restricted-Boltzman-Machines-Latex
 INPUT C:\Users\breit\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\breit\Desktop\VScode\Quantum Boltzmann Machines and Autoencoders\main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -46,8 +46,12 @@ INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.s
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
@@ -56,10 +60,6 @@ INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvde
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
@@ -727,31 +727,12 @@ INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine
 INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
 INPUT Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
-INPUT Implementation\Restricted Boltzmann Machine\Guassian-Binary RBM.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
-INPUT Implementation\Restricted Boltzmann Machine\Optimization Methods.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
-INPUT Implementation\Restricted Boltzmann Machine\The Blocking Method.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Structure.tex
-INPUT Implementation\Restricted Boltzmann Machine\Machine Structure.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
-INPUT .\Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
-INPUT Implementation\Restricted Boltzmann Machine\Machine Parameter Optimization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
+INPUT Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
 INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
 INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
@@ -786,6 +767,8 @@ INPUT .\main.out
 INPUT .\main.out
 INPUT .\main.pyg
 INPUT .\main.pyg
+INPUT C:\Users\breit\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\breit\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -834,3 +817,7 @@ INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb
