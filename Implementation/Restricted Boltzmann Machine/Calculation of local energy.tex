@@ -12,7 +12,15 @@ but here we will explain in more detail how this is done for the each of the dif
 
 Our operations will then be done on all the samples at once, decreasing computation time by vectorization as well as opening up for use of the GPU. For reference we will call the input array of all the samples $\ket{s}$ as $\mathbf{S}$. To use the definition of the local energy, \ref{eq:local_imp}, we need to extract the machine state from our set of samples. As described in \ref{sec:nnqs} we check the distribution by extracting all unique states in our set of samples and setting the amplitudes as the square root of their relative occurrence in the set, presuming that all are positive definite.
 
-\\...\\
+\begin{minted}{python}
+  
+def unique_states_amplitude(samples):
+    size = samples.shape[0]
+    unique, weight = torch.unique(samples, dim=0, return_counts=True)
+    weight = torch.sqrt(weight/size)
+
+    return unique, weight
+\end{minted}
 
 We then have a approximation of our machine state $\ket{\psi}$. The next step of using each state in the sample set is varies with the hamiltonian of the system.
 
@@ -41,15 +49,22 @@ For a more structured explanation we separate the hamiltonian in three parts:
   \item $H_W$ - states one excited or deexcited particle away from $\ket{b}$.
 \end{itemize}
 
-For the $H_{\varepsilon}$ contribution we determine which samples matches which parts of the machine state $\ket{\psi_{rbm}}$. We create a mask showing which basis state each sample matches with, named $\vec{mask}$.
+For the $H_{\varepsilon}$ contribution we determine which samples matches which parts of the machine state $\ket{\psi_{rbm}}$. We create a mask showing which basis state each sample matches with, named \mintinline{python}{mask}.
 
-We then have an array of the machine states amplitudes multiplied by $\varepsilon$. Applying $\vec{mask}$ to this array then selects the correct value for each sample without having to calculate duplicates more than once. We then have the $H_{\varepsilon}$ contribution for each sample directly:
+We then have an array of the machine states amplitudes multiplied by $\varepsilon$. Applying \mintinline{python}{mask} to this array then selects the correct value for each sample without having to calculate duplicates more than once. We then have the $H_{\varepsilon}$ contribution for each sample directly:
 
-\\...\\
+\begin{minted}{python}
+def lipkin_local(samples, eps, V, W):
+    unique, weight = unique_states_amplitude(samples)
+    mask = torch.where(torch.all(samples[:, None] == unique, dim = -1))[1]
+\end{minted}
 
 For the $H_V$ contributions we first need to find each possible one-pair-different basis states that matches with a part of the machine state. Since the machine state is defined as the sample distribution we can check what states are one-pair-different from each other by doing the following:
 
-\\...\\
+\begin{minted}{python} 
+    H_0 = 0.5*eps*(torch.sum(unique == 1, dim=-1)- torch.sum(unique == 0, dim = -1))
+    H_eps = H_0[mask]
+\end{minted}
 
 We check each of the unique states, $\ket{b_i}$, with all the other unique states, $\ket{b_j}$, and see if there are a one-pair-difference between them, setting the element $\left (i, j \right )$ to $1$ if that is the case. As a result we end up with a $N\times N$ matrix, $\mathbf{V}$, where $N$ is the number of unique states. Each pair represents the element
 \begin{equation}
@@ -66,8 +81,33 @@ and since the amplitudes are already assumed to be positive definite, we can the
 \begin{equation}
  E_{loc, V}(\ket{b_i})= \sum_j \mathbf{V}_{i,j} \; ,
 \end{equation}
-which we can then apply $\vec{mask}$ to and get the $H_V$ contribution for each sample:
+which we can then apply \mintinline{python}{mask} to and get the $H_V$ contribution for each sample:
 
-\\...\\
+\begin{minted}{python}
+    H_1 = V*torch.sum(weight[:, None]*(abs(torch.sum((unique[:, None] - unique), dim=-1)) == 2), dim=0)/weight
+    H_V = H_1[mask]
+\end{minted}
+
+For $H_W$ we similarly find the unique states that are one particle different from each other:
+
+Scaling it with the interaction strength $W$, the rows and columns with the amplitude of the respective basis state and sum along the second axis:
+
+\begin{minted}{python} 
+    H_2 = W*torch.sum(weight[:, None]*(abs(torch.sum((unique[:, None] - unique), dim=-1)) == 1) , dim=0)/weight
+    H_W = H_2[mask]
+\end{minted}
+
+The total hamiltonian we have as
+
+\[
+  H = H_{\varepsilon} - H_V - H_W \; ,
+\]
+
+which we can calculate directly:
+
+\begin{minted}{python} 
+    E = (H_eps - H_V - H_W)
+    return E
+\end{minted}
 
 
