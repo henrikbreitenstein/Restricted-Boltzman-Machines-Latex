@@ -3,14 +3,18 @@
 We know that the local energy of a particular sample state $\ket{s}$ can be calculated as
 
 \begin{equation}
-\begin{equation}
   E_{loc} = \displaystyle\frac{\bra{s}H\ket{\psi_{rbm}}}{\braket{s}{\psi_{rbm}}} \; ,
   \label{eq:local_imp}
 \end{equation}
 
 but here we will explain in more detail how this is done for the each of the different systems we are looking at. First of all it is important to remember the structure of the input to our function calculating the local energy. We want to vectorize the calculations as much as possible so the input will be all our samples, taken with the Gibbs or Metropolis-Hastings algorithm, together in one array:
 
-Our operations will then be done on all the samples at once, decreasing computation time by vectorization as well as opening up for use of the GPU. For reference we will call the input array of all the samples $\ket{s}$ as $\mathbf{S}$. To use the definition of the local energy, \ref{eq:local_imp}, we need to extract the machine state from our set of samples. As described in \ref{sec:nnqs} we check the distribution by extracting all unique states in our set of samples and setting the amplitudes as the square root of their relative occurrence in the set, presuming that all are positive definite.
+\begin{equation}
+  \mathbf{S} = \left [ s_0, s_1, \dots, s_n \right] \; .
+  \label{eq:Samples_set}
+\end{equation}
+
+Our operations will then be done on all the samples at once, decreasing computation time by vectorization as well as opening up for use of the GPU. To use the definition of the local energy, \ref{eq:local_imp}, we need to extract the machine state from our set of samples. As described in \ref{sec:nnqs} we check the distribution by extracting all unique states in our set of samples and setting the amplitudes as the square root of their relative occurrence in the set, presuming that all are positive definite.
 
 \begin{minted}{python}
   
