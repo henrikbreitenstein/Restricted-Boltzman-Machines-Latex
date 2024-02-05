@@ -1,11 +1,101 @@
 \section{Controls and Errors}
 
-Seeing how accurate a model is can be use full both during training, to see how well it optimizes, and for a trained model. For this we can simply look at the desired output of the model, a target solution $\boldsymbol{z_t}$, and compare to the output of the model $\boldsymbol{z_m}$ with the mean squared error for example:
+Seeing how accurate a model is can be use full both during training, to see how well it optimizes, and for a trained model. The simplest way to check the accuracy is to look at the difference from the true value of whatever the model was supposed to find. If we define the model's predicted answer as $z_{m}$ and the true answer as $z_{t}$ we have that the answer is:
+
+\begin{equation}
+  Error = |z_t-z_m| \; ,
+  \label{eq:theory_error}
+\end{equation}
+
+where we take the absolute value as the sign of the error is not too interesting. For a set of model predictions $\boldsymbol{z_m}$ and the equivalent set of the true values $\boldsymbol{z_t}$, we might want to reduce the error set,
+
+$$\textbf{Error} = \boldsymbol{z}_t-\boldsymbol{z}_m \; ,$$
+
+into one number to make it easier to compare models. A intuitive solution is to take the mean error, but often it is desirable to emphasize larger differences and for this there are several ways of approach. One approach is to take the mean of the squared error:
 
 \begin{equation} \label{eq:mse}
     MSE = \frac{1}{N} \sum_{i = 1}^N (\boldsymbol{z}_{t, i} - \boldsymbol{z}_{m, i})^2 \; .
 \end{equation}
 
-But this can only be done if we have the target solution $\boldsymbol{z_t}$. To determine if a found ground state wavefunction is a good approximation of the true wavefunction, we can use the variance of the local energies of the samples we have. The variance is defined as follows:
+But these error can only be calculated if we have the target solution $\boldsymbol{z_t}$. To compare models without the true solution we can look at the accuracy of our Monte Carlo samples. The ground state energy of a hamiltonian is supposed to have zero total variance in the local energy of the samples. For a discrete set of values $\boldsymbol{X} = \{x_1, x_2, \dots, x_n\}$ with probabilities $\boldsymbol{P} = \{p_1, p_2, \dots, p_n\}$, the variance is defined as:
 
+\begin{equation}
+  Var[\boldsymbol{X}] = \frac{1}{n} \sum_{i=1}^{n} \left (x_i - \mu \right)^2 \; ,
+  \label{eq:variance_theory}
+\end{equation}
 
+where $\mu$ is the mean:
+
+\begin{equation}
+  \mu[\boldsymbol{X}] = \frac{1}{n} \sum_{i=1}^n x_i \; .
+  \label{eq:mean_theory}
+\end{equation}
+
+The local energy of a sample $\ket{s} \in \boldsymbol{S}$ is:
+
+\begin{equation}
+  E_L(s) = \frac{\bra{s} H \ket{\psi_{rbm}}}{\braket{s}{\psi_{rbm}}} \; ,
+  \label{eq:local_energy_variance}
+\end{equation}
+
+where $\ket{\psi_{rbm}}$ is the machine state. We can then insert the set of all the local energies,
+
+\begin{equation}
+  \boldsymbol{E}_L = {E_L(s_1), E_L(s_2), \dots, E_L(s_n)} \; ,
+  \label{eq:local_energies_set_variance}
+\end{equation}
+
+into the definition of variance, \ref{eq:variance_theory}.
+
+\begin{equation}
+  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (E_L(s_i) - \mu)^2 \; .
+  \label{eq:variance_local_energy}
+\end{equation}
+
+And we get
+
+\begin{equation}
+  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (
+    E_L(s_i)
+    - \langle E \rangle
+  \right )^2 \; ,
+  \label{eq:variance_local_energy_2}
+\end{equation}
+
+which can be rewritten as
+
+\begin{equation}
+  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (E_L(s_i)^2 - 2 \langle E \rangle E_L(s_i) + \langle E \rangle^2 \right ) \; .
+  \label{eq:variance_local_energy_3}
+\end{equation}
+
+We approximate the expected energy as
+
+\begin{equation}
+  \langle E \rangle \approx \frac{1}{n} \sum_{k=1}^n E_L(s_k) \; .
+  \label{eq:variance_mean_energy}
+\end{equation}
+
+Though if our trial wavefunction, $\psi_{rbm}$, is equal to the true wavefunction $\psi_t$, we have that
+
+\begin{equation}
+  \lim_{n\rightarrow\infty} \frac{1}{n} \sum_{k=1}^n E_L(s_k) = \langle E \rangle \; ,
+  \label{eq:variance_mean_energy_limit}
+\end{equation}
+
+which we can then use to get
+
+\begin{gather}
+  Var[\boldsymbol{E}_L] = 
+   \frac{1}{n} \sum_{i=1}^n [E_L(s_i)^2] 
+  -2\langle E \rangle \frac{1}{n} \sum_{i=1}^n[E_L(s_i)] 
+  + \langle E \rangle^2  \\
+   \lim_{n\rightarrow\infty}Var[\boldsymbol{E}_L] =
+   \langle E \rangle^2   
+  -2\langle E \rangle^2
+  + \langle E \rangle^2 \\
+  \lim_{n\rightarrow\infty}Var[\boldsymbol{E}_L] = 0 \; .
+  \label{eq:variance_local_energy_4}
+\end{gather}
+
+So for a machine state that is close to the true wavefunction we would get a low variance, though limited by the fact that we have a finite number of samples.
