@@ -88,16 +88,18 @@ and since the amplitudes are already assumed to be positive definite, we can the
 which we can then apply \mintinline{python}{mask} to and get the $H_V$ contribution for each sample:
 
 \begin{minted}{python}
-    H_1 = V*torch.sum(weight[:, None]*(abs(torch.sum((unique[:, None] - unique), dim=-1)) == 2), dim=0)/weight
+    H_1 = V*torch.sum(
+        weight[:, None]*(
+            abs(torch.sum((unique[:, None] - unique), dim=-1)) == 2), dim=0)/weight
     H_V = H_1[mask]
 \end{minted}
 
-For $H_W$ we similarly find the unique states that are one particle different from each other:
-
-Scaling it with the interaction strength $W$, the rows and columns with the amplitude of the respective basis state and sum along the second axis:
+For $H_W$ we similarly find the unique states that are one particle different from each other. Scaling it with the interaction strength $W$, the rows and columns with the amplitude of the respective basis state and sum along the second axis:
 
 \begin{minted}{python} 
-    H_2 = W*torch.sum(weight[:, None]*(abs(torch.sum((unique[:, None] - unique), dim=-1)) == 1) , dim=0)/weight
+    H_2 = W*torch.sum(
+        weight[:, None]*(
+            abs(torch.sum((unique[:, None] - unique), dim=-1)) == 1) , dim=0)/weight
     H_W = H_2[mask]
 \end{minted}
 
@@ -113,5 +115,60 @@ which we can calculate directly:
     E = (H_eps - H_V - H_W)
     return E
 \end{minted}
+
+
+\subsection{The Ising model}
+
+For the Ising model we can calculate the local energy directly with:
+
+\begin{equation}
+  H(\mathbf{\sigma}) = J\sum_{<i,j>}\sigma_i\sigma_j \; ,
+  \label{eq:imp_hamil_ising}
+\end{equation}
+
+where $J$ is the interaction strength between nearest neighbors. To calculate this efficiently we take the whole set and shift it:
+
+\begin{minted}{python}
+  def ising_local(samples):
+    spin = 2*samples - 1
+    shifted = torch.roll(spin, dim=1)
+\end{minted}
+
+where we then assume the boundary conditions:
+
+\begin{equation}
+  \mathbf{\sigma}_0 = \mathbf{\sigma}_N \; ,
+  \label{eq:ising_boundary_imp}
+\end{equation}
+
+as explained in \ref{sec:ising_theory}. We can then easily calculate the energy of the configuration with a sum:
+
+\begin{minted}{python}
+    H_J = J*torch.sum(shifted*spin, dim=1)
+    H_L = L*torch.sum(spin, dim=1)
+    return H_J + H_L
+\end{minted}
+
+where $H_J$ is the iarenteraction part and $H_L$ is the external field part.
+
+\subsection{The Pairing model}
+
+The Pairing model hamiltonian is defined as:
+
+\begin{equation}
+  H = \dots
+  \label{eq:Pairing_model_imp}
+\end{equation}
+
+We then start with
+
+\subsection{The Heisenberg model}
+
+The Heisenberg model hamiltonian we have as:
+
+\begin{equation}
+  H = \dots
+  \label{eq:Heisenberg_model_imp}
+\end{equation}
 
 
