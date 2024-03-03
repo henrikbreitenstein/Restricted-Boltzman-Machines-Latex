@@ -100,7 +100,7 @@ This gives us the update rule
     \Delta w_{ij} = - \eta \left ( \left < v_i h_j \right >_{\text{data}} - \left < v_i h_j \right >_{\text{model}} \right ) \; . 
 \end{equation}
 \subsection{Restricted Boltzmann machine}
-Estimating $ \left < v_i h_j \right >_{\text{data}}$ and $ \left < v_i h_j \right >$ is done by Gibbs sampling, which is explained in a later chapter, but can be inefficient and take a long time to converge for complex models. Removing the weights between nodes within the same layer we can alleviate much of the computational cost of training. This type of Boltzmann machine is called a restricted Boltzmann machine, or RBM:
+Estimating $ \left < v_i h_j \right >_{\text{data}}$ and $ \left < v_i h_j \right >_{model}$ is done by Gibbs sampling, which is explained in a later chapter, but can be inefficient and take a long time to converge for complex models. Removing the weights between nodes within the same layer we can alleviate much of the computational cost of training. This type of Boltzmann machine is called a restricted Boltzmann machine, or RBM:
 
 \begin{figure}[H]
     \centering
@@ -146,6 +146,123 @@ while estimating $ \left < v_i h_j \right >_{\text{model}}$ requires that we let
 
 And from \ref{eq:wdiff} the change in weight becomes
 
-\begin{equation}
-    \Delta \boldsymbol{W} = \boldsymbol{z}_v^{(0)} \otimes p(\boldsymbol{h}^{(0)} | \boldsymbol{z}_{v}^{(0)}) - \boldsymbol{z}_v^{(k)} \otimes p(\boldsymbol{h}^{(k)} | \boldsymbol{z}_{v}^{(k)}) \; .
+\begin{equation}\label{eq:rbm_change_weight}
+  \Delta \boldsymbol{W} = \eta \left [\boldsymbol{z}_v^{(0)} \otimes p(\boldsymbol{h}^{(0)} | \boldsymbol{z}_{v}^{(0)}) - \boldsymbol{z}_v^{(k)} \otimes p(\boldsymbol{h}^{(k)} | \boldsymbol{z}_{v}^{(k)}) \right ] \; .
 \end{equation}
+\subsection{Neural net quantum state}
+
+To apply the restricted Boltzmann machine on a quantum mechanical system, a way to represent the system's state is needed. As the visual layer the output of the machine, and can here be viewed as the collapsed state of the system after measurement, we use the marginal distribution of the visual layer, the probability distribution of the visual layer states given the state of the hidden layer, to represent the wavefunction of the system.
+
+\begin{align}
+  \Psi_{rbm}(\boldsymbol{v}) &=\frac{1}{Z} \sum_{\boldsymbol{h}} \exp{-E(\boldsymbol{v}, \boldsymbol{h})} \\
+                             &=\frac{1}{Z} e^{-\sum_i^{N_v} \frac{(x_i - a_i)^2}{2}} \prod_j^{ N_h } (1 + e^{b_j + \sum_i^{N_v} x_i w_{ij}})\; ,
+  \label{eq:nqs_rbm}
+\end{align}
+
+This is most often referred to as a neural net quantum state, or abbreviated NQS.
+
+\subsection{Minimizing local energy}
+
+We want a restricted boltzmann machine to match the distribution of the ground state of a quantum mechanical systems. This poses a problem with the use of the change in weight, \ref{eq:rbm_change_weight}, as we do not have any data to train the model on. Instead we will use the variational principle with the fact that
+
+\begin{equation}
+  E \left [ \Psi_rbm \right ] \geq E_0 \; ,
+  \label{eq:train_rbm_vp}
+\end{equation}
+
+where $\Psi_rbm$ is the machine state and $E_0$ is the ground state of the quantum system we want the machine state to match. Because of \ref{eq:train_rbm_vp} we can variationly minimize the expected energy and be certain that it approaches the ground state. This poses another problem, though, because the machine state is not directly accessible, but one can take samples from the machine's distribution. So instead of using the machine state directly, one approximates it by a sufficient amount of samples, essentially taking repeated measurements of the system and constructing the wavefunction from the result. For $N$ total number of samples, and $M_k$ the number of samples that are the basis state $\ket{b_k} \in \boldsymbol{B}$, then we have the approximate machine state:
+
+\begin{equation}
+  \Psi_{rbm} \approx \sqrt{\frac{M_0}{N}} \ket{b_0} + \sqrt{\frac{M_1}{N}}\ket{b_1} + \dots + \sqrt{\frac{M_N}{N}}\ket{b_N} \; ,
+  \label{eq:approximate_machine_state}
+\end{equation}
+
+where we assume the wavefunction is real and positive definite. We use the samples to then approximate the energy by finding the expectation value of their local energy. The local energy is defined as:
+
+\begin{equation}
+  E_L(s) = \frac{\bra{s}H\ket{\Psi_{rbm}}}{\braket{s}{\Psi_{rbm}}} \; ,
+  \label{eq:rbm_local_energy}
+\end{equation}
+
+where $\bra{s}$ is a sample. The system energy can then be approximated
+
+\begin{equation}
+  \langle E \rangle \approx \langle E_L \rangle = \frac{1}{N} \sum_{k=0}^{N} E_L(s_k) \; .
+  \label{eq:rbm_energy}
+\end{equation}
+
+So minimizing the energy of the machine state can be done through minimizing the local energy. To derive the cost function, our gradient for the gradient decent calculations, we will take inspiration from this derivation \cite{DerivationGradient} of unknown author. Starting of with the expected value of the hamiltonian
+
+\begin{equation}
+  \langle H \rangle = \frac{\int \mathrm{d}\Psi(X)^* H \Psi(X)}{\int\mathrm{d}X \Psi^*(X)\Psi(X)} \; ,
+  \label{eq:expected_hamiltonian}
+\end{equation}
+
+we then have the derivative by using the chain rule
+
+\begin{equation}
+  \frac{\partial}{\partial{\alpha}}\langle H \rangle = \frac{\int\mathrm{d}X \Psi^*_{\alpha}H\Psi + \Psi^*H\Psi_{\alpha}}{\int\mathrm{d}X\Psi^*\Psi} - \frac{\left ( \int\mathrm{d}X\Psi^*H\Psi\right )\left ( \int\mathrm{d}X\Psi_{\alpha}\Psi + \Psi^*\Psi_{\alpha}\right )}{\left ( \int\mathrm{d}X\Psi^*\Psi\right )^2} \; ,
+  \label{eq:expected_derivative}
+\end{equation}
+
+ where $\Psi_{\alpha}$ is used to denote $\frac{\partial\Psi}{\partial\alpha}$. Now we expand the integrals of the numerator of the second term by $\Psi^*\Psi$ and we get
+
+\begin{equation}
+  \frac{\partial}{\partial\alpha} \langle H\rangle = 
+\frac{\int \mathrm{d}X\, \Psi_\alpha^* H \Psi + \Psi^* H\Psi_\alpha}{\int \mathrm{d}X\, \Psi^* \Psi }
+- \left\langle E_L\right\rangle \left\langle \frac{\partial}{\partial\alpha} \ln |\Psi|^2\right\rangle \; .
+  \label{eq:first_expand}
+\end{equation}
+
+We then use the fact that the hamiltonian is Hermitian:
+
+\begin{equation}
+  \int \mathrm{d}X\, \Psi^* H\Psi_\alpha=\int \mathrm{d}X\, \Psi_\alpha (H\Psi)^* \; ,
+  \label{eq:Hermitian_hamiltonian}
+\end{equation}
+
+and we get
+
+\begin{equation}
+  \frac{\partial}{\partial\alpha} \langle H\rangle = 
+\frac{\int \mathrm{d}X\, \Psi_\alpha^* H \Psi + \Psi_\alpha (H\Psi)^*}{\int \mathrm{d}X\, \Psi^* \Psi }
+- \left\langle E_L\right\rangle \left\langle \frac{\partial}{\partial\alpha} \ln |\Psi|^2\right\rangle .
+  \label{eq:first_expand_hermit}
+\end{equation}
+
+then expanding the first terms numerator integrals by $\Psi^*\Psi$ we end up with
+
+\begin{align}
+\frac{\partial}{\partial\alpha} \langle H\rangle &= 
+\left\langle \frac{\Psi_\alpha^*}{\Psi^*} \frac{H \Psi}{\Psi}+ \frac{\Psi_\alpha}{\Psi} \left(\frac{H\Psi}{\Psi}\right)^*\right\rangle
+- \left\langle E_L\right\rangle \left\langle \frac{\partial}{\partial\alpha} \ln |\Psi|^2\right\rangle
+\\
+ &= 
+\left\langle \frac{\Psi_\alpha^*}{\Psi^*} E_L+ \frac{\Psi_\alpha}{\Psi} E_L^*\right\rangle
+- \left\langle E_L\right\rangle \left\langle \frac{\partial}{\partial\alpha} \ln |\Psi|^2\right\rangle \; .
+\end{align}
+
+If we now assume that $\Psi$ is real, and then $E_L$ would also be real, we can shorten the gradient
+
+\begin{equation}
+  \frac{\partial}{\partial\alpha} \langle H \rangle = 2\left(\langle E_L \frac{1}{\Psi}\frac{\partial\Psi}{\partial\alpha}\rangle - \langle E_L \rangle\langle\frac{1}{\Psi}\frac{\partial\Psi}{\partial\alpha}\rangle\right ) \; ,
+  \label{eq:cost_function}
+\end{equation}
+
+where $\alpha$ then is our collection of weights and biases
+\subsection{Change in weights and biases}
+
+For practical use of the cost function \ref{eq:cost_function} defined above, we need to derive the change in weights and biases. With the fact that $\frac{1}{\Psi}\frac{\partial\ln{\Psi}}{\partial\alpha} = \frac{\partial\ln{\Psi}}{\partial\alpha}$ together with
+
+\begin{equation}
+  \ln{\Psi(\boldsymbol{v})} = -\ln{Z}-\sum_{i}^{N_v}\frac{(v_i-a_i)}{2}+\sum_{k}^{N_h} \ln{\left (1+\exp{b_k+\sum_j^{N_v}v_jw_{jk}}\right)} \; ,
+  \label{eq:log_psi}
+\end{equation}
+
+we can then find that
+
+\begin{gather}
+  \frac{\partial}{\partial a_i} \ln{\Psi}= v_i - a_i\\
+  \frac{\partial}{\partial b_j} \ln{\Psi}= \left (\exp{-b_j-\sum_k^{N_v}v_kw_{kj}}+1\right)^{-1} \\
+  \frac{\partial}{\partial w_{ij}}\ln{\Psi} =v_i\left (\exp{-b_j-\sum_k^{N_v}v_kw_{kj}}+1\right)^{-1} \; . 
+\end{gather}

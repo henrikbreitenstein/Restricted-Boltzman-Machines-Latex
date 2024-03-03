@@ -1,0 +1,20 @@
+\section{The Ising model}
+
+The Ising model consists of a discrete set of particles where nearest neighbors interact. We will look at the one dimensional Ising model, with the particles arranged in a line as follows:
+
+image of particles in a line
+
+Where the state of the whole system is denoted $\boldsymbol{\sigma}$ and the individual states are denoted  $\sigma$. Each particle can be in either spin up or spin down state which gives their respective interactive factor
+
+\begin{equation}
+  \sigma \in \{+1,-1\} \; .
+\end{equation}
+
+We define the interaction strength between particles as a constant $J$. We sum each neighbor pair's contribution and get the total energy for that specific configuration, which then is the local energy of that configuration:
+
+\begin{equation}
+  H(\boldsymbol{\sigma}) =J\sum_{\langle i,j\rangle} \sigma_i\sigma_j \; .
+  \label{eq:Ising_hamiltonian}
+\end{equation}
+
+

@@ -33,7 +33,7 @@ We then have a approximation of our machine state $\ket{\psi}$. The next step of
 The Lipkin model hamiltonian is defined as
 
 \begin{equation} 
-    H = \sum_{p\sigma} \left ( \frac{1}{2} \sigma \varepsilon \right ) \hc{a}{p\sigma}\op{a}{p\sigma} - \frac{V}{2}\sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'\sigma} \op{a}{p'-\sigma}\op{a}{p-\sigma} - \frac{W}{2} \sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'-\sigma} \op{a}{p'\sigma}\op{a}{p-\sigma} \; , 
+    H = \sum_{p\sigma} \left ( \frac{1}{2} \sigma \varepsilon \right ) \hc{a}{p\sigma}\op{a}{p\sigma} + \frac{V}{2}\sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'\sigma} \op{a}{p'-\sigma}\op{a}{p-\sigma} + \frac{W}{2} \sum_{pp'\sigma} \hc{a}{p\sigma} \hc{a}{p'-\sigma} \op{a}{p'\sigma}\op{a}{p-\sigma} \; , 
 \end{equation}
 
 For a more structured explanation we separate the hamiltonian in three parts:
@@ -72,7 +72,7 @@ For the $H_V$ contributions we first need to find each possible one-pair-differe
 
 We check each of the unique states, $\ket{b_i}$, with all the other unique states, $\ket{b_j}$, and see if there are a one-pair-difference between them, setting the element $\left (i, j \right )$ to $1$ if that is the case. As a result we end up with a $N\times N$ matrix, $\mathbf{V}$, where $N$ is the number of unique states. Each pair represents the element
 \begin{equation}
-  \frac{\bra{b_i}H_V\ket{b_j}}{\braket{b_i}{\psi_{rbm}}} = \frac{V\alpha_j}{\alpha_i} \; ,
+  \boldsymbol{V}_{i,j} =\frac{\bra{b_i}H_V\ket{b_j}}{\braket{b_i}{\psi_{rbm}}} = \frac{V\alpha_j}{\alpha_i} \; ,
   \label{eq:LMG_imp_V_cont}
 \end{equation}
 
@@ -106,13 +106,13 @@ For $H_W$ we similarly find the unique states that are one particle different fr
 The total hamiltonian we have as
 
 \[
-  H = H_{\varepsilon} - H_V - H_W \; ,
+  H = H_{\varepsilon} + H_V + H_W \; ,
 \]
 
 which we can calculate directly:
 
 \begin{minted}{python} 
-    E = (H_eps - H_V - H_W)
+    E = (H_eps + H_V + H_W)
     return E
 \end{minted}
 
@@ -122,7 +122,7 @@ which we can calculate directly:
 For the Ising model we can calculate the local energy directly with:
 
 \begin{equation}
-  H(\mathbf{\sigma}) = J\sum_{<i,j>}\sigma_i\sigma_j \; ,
+  H(\boldsymbol{\sigma}) = J\sum_{<i,j>}\sigma_i\sigma_j \; ,
   \label{eq:imp_hamil_ising}
 \end{equation}
 

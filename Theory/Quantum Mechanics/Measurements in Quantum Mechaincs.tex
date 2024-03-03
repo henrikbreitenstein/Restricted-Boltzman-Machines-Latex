@@ -1,3 +1,25 @@
 \section{Measurement in Quantum Mechanics}
-\subsection{Measuring a Quantum State}
-\subsection{Phase of a Quantum State}
+
+Measurement in quantum mechanics is different from classical measurement in the way that the act of measuring a state affects the state itself. When a quantum state is measured the output will be a real, classical, value. As such, if we have a wavefunction $\ket{\Psi}$ of a particle in the superposition
+
+\begin{equation}
+  \ket{\Psi} = \alpha_{\downarrow}\psi_{\downarrow} + \alpha_{\uparrow}\psi_{\uparrow} \; ,
+  \label{eq:measurement_superposition}
+\end{equation}
+
+where $\psi_{\downarrow}$ is the spin down state and $\psi_{\uparrow}$ is the spin up state of the particle. A measurement, here indicated with an $M$, can yield either
+
+$$M(\ket{\Psi}) = \psi_{\downarrow} \; \text{or} \; M({\ket{\Psi}}) = \psi_{\uparrow} \; .$$
+
+But as the measurement is done the wavefunction 'collapses' into the measured state
+
+$$M(\ket{\Psi}) = \psi_{\downarrow|\uparrow}\rightarrow\ket{\Psi} = \psi_{\downarrow|\uparrow}$$
+
+Most often we are interested in the original superposition wavefunction and a measurement result does not tell us anything meaningful about it. To get a look at the wavefunction we need to take multiple measurements, where the system is put back into its original state, and estimate $\alpha_{\downarrow}$ and $\alpha_{\uparrow}$ with the averages
+
+\begin{align}
+  \alpha_{\downarrow}&\approx \sqrt{\frac{N_{\downarrow}}{N}} \\
+  \alpha_{\uparrow}&\approx\sqrt{\frac{N_{\uparrow}}{N}} \; ,
+\end{align}
+
+where $N$ is the total number of measurements and $N_{\downarrow|\uparrow}$ is the number of times the measurement yields the respective state.

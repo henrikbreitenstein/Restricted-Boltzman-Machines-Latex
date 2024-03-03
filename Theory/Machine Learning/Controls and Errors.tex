@@ -48,7 +48,7 @@ where $\ket{\psi_{rbm}}$ is the machine state. We can then insert the set of all
 into the definition of variance, \ref{eq:variance_theory}.
 
 \begin{equation}
-  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (E_L(s_i) - \mu)^2 \; .
+  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (E_L(s_i) - \mu\right)^2 \; .
   \label{eq:variance_local_energy}
 \end{equation}
 
@@ -57,7 +57,7 @@ And we get
 \begin{equation}
   Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (
     E_L(s_i)
-    - \langle E \rangle
+    - \langle E_L\rangle
   \right )^2 \; ,
   \label{eq:variance_local_energy_2}
 \end{equation}
@@ -65,37 +65,49 @@ And we get
 which can be rewritten as
 
 \begin{equation}
-  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (E_L(s_i)^2 - 2 \langle E \rangle E_L(s_i) + \langle E \rangle^2 \right ) \; .
+  Var[\boldsymbol{E}_L] = \frac{1}{n} \sum_{i=1}^n \left (E_L(s_i)^2 - 2 \langle E_L\rangle E_L(s_i) + \langle E_L\rangle^2 \right ) \; .
   \label{eq:variance_local_energy_3}
 \end{equation}
 
-We approximate the expected energy as
-
-\begin{equation}
-  \langle E \rangle \approx \frac{1}{n} \sum_{k=1}^n E_L(s_k) \; .
-  \label{eq:variance_mean_energy}
-\end{equation}
-
-Though if our trial wavefunction, $\psi_{rbm}$, is equal to the true wavefunction $\psi_t$, we have that
-
-\begin{equation}
-  \lim_{n\rightarrow\infty} \frac{1}{n} \sum_{k=1}^n E_L(s_k) = \langle E \rangle \; ,
-  \label{eq:variance_mean_energy_limit}
-\end{equation}
-
-which we can then use to get
+And we get
 
 \begin{gather}
   Var[\boldsymbol{E}_L] = 
    \frac{1}{n} \sum_{i=1}^n [E_L(s_i)^2] 
-  -2\langle E \rangle \frac{1}{n} \sum_{i=1}^n[E_L(s_i)] 
-  + \langle E \rangle^2  \\
-   \lim_{n\rightarrow\infty}Var[\boldsymbol{E}_L] =
-   \langle E \rangle^2   
-  -2\langle E \rangle^2
-  + \langle E \rangle^2 \\
-  \lim_{n\rightarrow\infty}Var[\boldsymbol{E}_L] = 0 \; .
+  -2\langle E_L\rangle \frac{1}{n} \sum_{i=1}^n[E_L(s_i)] 
+  + \langle E_L\rangle^2  \\
+   Var[\boldsymbol{E}_L] =
+   \langle E_L^2 \rangle   
+  -\langle E_L\rangle^2
   \label{eq:variance_local_energy_4}
 \end{gather}
 
-So for a machine state that is close to the true wavefunction we would get a low variance, though limited by the fact that we have a finite number of samples.
+If we take a look at the expectation values $\langle E_L\rangle$ and $\langle E_L^2 \rangle$. We estimate the true expectation value of the energy as:
+
+\begin{equation}
+  \langle E \rangle \approx  \langle E_L \rangle = \displaystyle\frac{1}{n}\displaystyle\sum_{k=1}^{n} E_L(s_k) = \displaystyle\frac{1}{n}\displaystyle\sum_{k=1}^{n} \displaystyle\frac{\bra{s_k}H\ket{\psi_{rbm}}}{\braket{s_k}{\psi_{rbm}}}\; ,
+  \label{eq:variance_true}
+\end{equation}
+
+which for a correct trial wavefunction $\psi_{rbm}$ we would have
+
+\begin{equation}
+  \langle E_L \rangle = \displaystyle\frac{1}{n}\displaystyle\sum_{k=1}^{n}E \displaystyle\frac{\braket{s_k}{\psi_{rbm}}}{\braket{s_k}{\psi_{rbm}}}  = \langle E\rangle\; .
+  \label{eq:variance_true_true}
+\end{equation}
+
+And for $\langle E_L^2\rangle$ we get
+
+\begin{equation}
+  \langle E_L^2 \rangle = \displaystyle\frac{1}{n}\displaystyle\sum_{k=1}^{n} \displaystyle\frac{\bra{s_k}H^2\ket{\psi_{rbm}}}{\braket{s_k}{\psi_{rbm}}} = \displaystyle\frac{1}{n}\displaystyle\sum_{k=1}^{n}E^2 \displaystyle\frac{\braket{s_k}{\psi_{rbm}}}{\braket{s_k}{\psi_{rbm}}} = \langle E\rangle^2\; .
+  \label{eq:variance_true_squared}
+\end{equation}
+
+Inserting this into \ref{eq:variance_local_energy_4} we get
+
+\begin{equation}
+  Var[\boldsymbol{E}_L] = \langle E\rangle^2 -\langle E\rangle^2 = 0 \; .
+  \label{eq:variance_final}
+\end{equation}
+
+So for a machine state that is close to the true wavefunction we would get a low variance, and if it is perfectly aligned with the true wavefunction we would only need one sample to determine the energy.
