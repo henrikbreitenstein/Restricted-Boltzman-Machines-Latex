@@ -1,0 +1,110 @@
+\subsection{LMG Hamiltonian represented with Pauli matrices}
+
+To represent the LMG Hamiltonian on a quantum computer we need to first write it in terms of Pauli matrices. From the quasi-spin form \ref{eq:quasiHamilt} we need to find a conversion to what Pauli gates are to be applied to which qubits. By defining $W = 0$ we have that
+
+\begin{equation}
+H = \varepsilon \op{J}{z} + \frac{1}{2}V \left ( \op{j}{+}{2}+\op{J}{-}{2} \right ) \; .
+\end{equation}
+
+
+Following the lecture notes of Hjort-Jensen \cite{LipkinQuasiToPauli}, we have the mappings:
+
+\begin{align} \label{eq:mappingJ}
+    \op{j}{z}{(n)} &=\frac{1}{2}\sum_{\sigma}\sigma a^\dagger_{n\sigma}a_{n\sigma} \\
+    \op{j}{\pm}{(n)}&= \hc{a}{n\pm}\op{a}{n\pm} \; ,
+\end{align}
+
+and the commutation relations:
+
+\begin{equation}
+    \left [ \op{J}{+}, \op{J}{-} \right ] = 2\op{J}{z}
+\end{equation}
+
+and 
+
+
+\begin{equation}
+    \left [ \op{J}{z}, \op{J}{\pm} \right ] = \pm \op{J}{\pm} \; .
+\end{equation}
+
+With the ladder operators being
+
+\begin{equation} \label{eq:ladderJ}
+    \op{J}{\pm} = \op{J}{x} \pm i\op{J}{y} \; ,
+\end{equation}
+
+we then have the total spin operator
+
+\begin{equation}
+    \op{J}{}{2} = \op{J}{x}{2} + \op{J}{y}{2} + \op{J}{z}{2} = \frac{1}{2} \left \{ \op{J}{+}, \op{J}{-} \right \} + \op{J}{z}{2} \; ,
+\end{equation}
+
+where $n$ represents which particle the operator is applied to. Defining the number operators as
+
+\begin{align}
+    \op{N}{+} &= \sum-{n} \hc{a}{n+}\op{a}{n+} \\
+    \op{N}{-} &= \sum-{n} \hc{a}{n-}\op{a}{n-} \\
+    \op{N} &= \sum-{n\sigma} \hc{a}{n\sigma}\op{a}{n\sigma} \; ,
+\end{align}
+
+we can see that the operator $\op{J}{z}$ counts half the difference of particles in the upper and lower levels. Since the Hamiltonian preserves the number of particles and particles can only be moved in pairs, $\op{J}{z}$ can take the values:
+
+\begin{equation}
+    \op{J}{z} \in \left \{ -\frac{N}{2}, -\frac{N}{2}+1, \dots , \frac{N}{2} - 1, \frac{N}{2} \right \}
+\end{equation}
+
+Looking at the rotation operator
+
+$$\op{R} = e^{i \phi \op{J}{z}} \; ,$$
+
+we have that the possible eigenvalues $r$ of the signature operator would be
+
+\begin{align}
+    r = +1 \; &, \; \op{j}{z} = 2n \\
+    r = +i \; &, \; \op{j}{z} = 2n + \frac{1}{2}\\
+    r = -1 \; &, \; \op{j}{z} = 2n + 1\\
+    r = -i \; &, \; \op{j}{z} = 2n + \frac{3}{2} \; .
+\end{align}
+
+Though since we can only move particles in pairs we only encounter the values $r = +1$ and $r= -1$. This also means that $\op{j}{z}$ can only change as follows:
+
+$$\op{j}{z} \rightarrow \frac{1}{2}[(\op{N}{+}\pm 2n)-(\op{N}{-}\mp 2n)] \; .$$
+
+Which can be written as
+
+$$\op{j}{z} \rightarrow \op{J}{z} \pm 2n \; ,$$
+
+So for each particle we a state doublet $ \left \{ (n, +1) , (n, -1) \right \} $. To map this to a quantum circuit we would need to have all the possible outcomes represented by the $\ket{0}$ and $\ket{1}$ measurements of the qubits in the circuit. One way to do this would be to have a qubit for each state $(n, \sigma)$, then $\ket{0}$ represents an unoccupied state and $\ket{1}$ an occupied state. Such a mapping would require a qubit for each possible state, which is $2N$ since we start out with filling up the lower energy level with particles. 
+
+Another mapping, better in this case, would be to use the fact that both degeneracy of the states are never occupied at the same time. We would then use a qubit for each degeneracy, in total $\frac{N}{2}$ qubits, where $\ket{0}$ would represent $(n, +1)$ being occupied and $\ket{1}$ would be interpreted as $(n, -1)$ being occupied. This reduces the number of qubits needed by a half. 
+
+Using the mapping to one-body operators in \ref{eq:mappingJ} we get:
+
+\begin{equation}
+H = \varepsilon\sum_{n}\op{j}{z}{(n)} + \frac{1}{2}V\left[\left(\sum_n\op{j}{+}{(n)}\right)^2+\left(\sum_n \op{j}{-}{(n)}\right)^2\right] \; .
+\end{equation}
+
+\begin{equation}
+= \varepsilon\sum_{n}\op{j}{z}{(n)} + \frac{1}{2}V \sum_{n,m}\left (\op{j}{+}{(n)}\op{j}{+}{(m)}+ \op{j}{-}{(n)}\op{j}{-}{(m)}\right ) \; .
+\end{equation}
+
+Using $\op{j}{\pm} = \op{j}{x} \pm i\op{j}{y}$ (\ref{eq:ladderJ}) we get
+
+\begin{equation}
+H = \varepsilon\sum_{n}\op{j}{z}{(n)} + \frac{1}{2}V \sum_{n < m}\left (\op{j}{x}{(n)}\op{j}{x}{(m)}+ \op{j}{z}{(n)}\op{j}{z}{(m)}\right ) \; .
+\end{equation}
+
+Then by converting the quasi-spin operators with the relations
+
+\begin{align}
+    j_x^{(n)} &= \frac{1}{2} X_n \\
+    j_y^{(n)} &= \frac{1}{2} Y_n\\
+    j_z^{(n)} &= \frac{1}{2} Z_n \; ,
+\end{align}
+
+we get the Hamiltonian in Pauli matrix form
+
+\begin{equation}
+    H=\frac{1}{2}\epsilon\sum_{n}Z_n+\frac{1}{2}V\sum_{n < m}(X_nX_m-Y_nY_m) \; .
+\end{equation}
+
