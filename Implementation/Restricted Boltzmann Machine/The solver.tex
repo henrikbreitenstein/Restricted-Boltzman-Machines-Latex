@@ -1,0 +1,177 @@
+\subsection{The solver}
+
+Solving a system here means training the RBM some length of time or until a certain threshold is met, and get the machines last guess at the system's ground state energy. To train the machine we take first need to implement the sampling of each layer.
+
+\begin{minted}{python}
+def sample_visual(hidden, visual_bias, W):
+    given = S(hidden@W.T + visual_bias)
+    binary = torch.bernoulli(given)
+    return given, binary
+\end{minted}
+
+This is done in accordance to the what has been derived mathematically, where the @ symbol indicates matrix multiplication. The \mintinline{python}{S(...)} function is the sigmoid function. The given probability distribution of the layer is then sent through a bernoulli function, which returns a binary array based on the given array's distribution. Both versions are returned, so it is only minor changes that is required to go from continuous to binary visual layer. The equivalent \mintinline{python}{sampel_hidden} has only the two bias arrays switched in the \mintinline{python}{given} definition.
+
+The next step is to find the cost function derivative based on the biases and weights. A estimation of the machine state is needed, and this is here done with two different methods. First of we have the Metropolis-Hastings algorithm which accept states conditionally, then secondly we have Gibbs sampling, which accepts all states. The use of a condition makes Metropolis-Hastings unable to be vectorized, and therefor severely slower than Gibbs sampling. Both methods are combined into the same function, here we have left some variable definitions out for ease of reading or lack of relevance.
+
+\begin{minted}{python}
+
+def MonteCarlo(cycles, local_energy_func, gibbs_k, model):
+    hidden = torch.bernoulli(torch.rand(
+        cycles, 
+        hidden_n, 
+        dtype=model.precision, 
+        device=model.device
+    ))
+    _, samples = p_visual(hidden)
+    hidden, dist_s = p_sampler(samples)
+    
+    dPsidvb = (dist_s - vb)
+    dPsidhb = 1/(torch.exp(-hb-dist_s@W)+ 1)
+    dPsidW = dist_s[:, :, None]*dPsidhb[:, None, :]
+    E_local = local_energy_func(dist_s)
+    E_mean = torch.mean(E_local)
+    E_diff = E_local - E_mean
+    DeltaVB = torch.mean(E_diff[:, None]*dPsidvb, axis=0)
+    DeltaHB = torch.mean(E_diff[:, None]*dPsidhb, axis=0)
+    DeltaW = torch.mean(E_diff[:, None, None]*dPsidW, axis=0)
+    dE = torch.mean(E_local - E_mean)      
+    return DeltaVB, DeltaHB, DeltaW
+
+\end{minted}
+
+The functions prefixed with a "p" are partial versions, to not needing to pass already defined argument. In the \mintinline{python}{p_sampler(...)} function we split between either of the two sampling methods. Looking at Metropolis-Hastings first:
+
+\begin{minted}{python}
+
+def metropolis_hastings(input, visual_bias, hidden_bias, W):
+    
+    size = input.size(dim=0)
+    given_h, hidden = sample_hidden(input, hidden_bias, W)
+    rand_nums = torch.rand(size)
+    previous = input[0]
+    E_prev = net_Energy(previous, visual_bias, hidden, hidden_bias, W)
+    for i in range(input.size(dim=0)):
+        E_current = net_Energy(input[i], visual_bias, hidden, hidden_bias, W)
+        acc_ratio = E_current/E_prev
+        if acc_ratio <= rand_nums[i]:
+            input[i] = previous
+        previous = input[i]
+        E_prev = E_current
+
+    return input
+\end{minted}
+
+We have a simple loop that generates a random number and checks it against the acceptance rate by the machine energy ratio. The Gibbs sampling is done by back and forth sampling of the layers.
+
+\begin{minted}{python}
+def gibbs_update(input, visual_bias, hidden_bias, W, k):
+    given_h, hidden = sample_hidden(input, hidden_bias, W)
+    given_v, visual_k = sample_visual(hidden, visual_bias, W)
+    for _ in range(k):
+        given_h, hidden_k = sample_hidden(given_v, hidden_bias, W)
+        given_v, visual_k = sample_visual(given_h, visual_bias, W)
+    
+    return hidden_k, visual_k
+\end{minted}
+
+Where the number of cycles \mintinline{python}{k}, often referred to as \mintinline{python}{gibbs_k} in the rest of the codebase, is predefined by the user. The two first lines does one Gibbs cycle, which means the total number of cycles is $k+1$.
+
+Then we have taken to use of all the derived equations for the derivative of the wave function and cost function based on the model variables. Something to note here is the use of automatic casting functionality PyTorch has, done by expanding the correct dimension in the arrays one does arithmetic with. Because of its avid use and the confusing syntax, we will explain a few of the above lines thoroughly.
+
+\begin{minted}{python}
+  dPsidW = dist_s[:, :, None]*dPsidhb[:, None, :]
+\end{minted}
+
+Both \mintinline{python}{dist_s} and \mintinline{python}{dPsidhb} are two-dimensional arrays. Inside the square brackets the \mintinline{python}{:} sign means that all elements of that dimension is to be included. The \mintinline{python}{None} creates an empty dimension to the array in the specified depth. For example \mintinline{python}{dist_s} has \mintinline{python}{None} in the lowest depth, at the scalar level. This replaces the scalar element with a $1 \times 1$ array with the scalar element in it. Like so:
+
+$$\begin{bmatrix}
+    a_{11} & a_{12} \\
+
+    a_{21} & a_{22}
+  \end{bmatrix} \rightarrow \begin{bmatrix}
+      [a_{11}] & [a_{12}] \\
+
+     [a_{21}] & [a_{22}]
+  \end{bmatrix}$$
+
+for a imagined $2 \times 2$ \mintinline{python}{dist_s} with dummy elements. With \mintinline{python}{dPsidhb[:, None, :]} we have the rows being wrapped up in the same way:
+
+
+$$\begin{bmatrix}
+    b_{11} & b_{12} \\
+
+    b_{21} & b_{22}
+  \end{bmatrix} \rightarrow \begin{bmatrix}
+     [b_{11} & b_{12}]  \\
+
+    [b_{21} & b_{22}]
+  \end{bmatrix}$$
+
+though as a extra layer above the vector of the row of elements stored in memory. The broadcasting happens when a missing or empty dimension comes up against another missing or empty dimension. PyTorch then makes duplicates of one dimension to fill the missing pieces, and this can be used to get the end result we want. A better example for understanding how broadcasting works is this line here:
+
+\begin{minted}{python}
+  DeltaVB = torch.mean(E_diff[:, None]*dPsidvb, axis=0)
+\end{minted}
+
+The array \mintinline{python}{E_diff} is one-dimensional and is stored in memory as a $1 \times n$ matrix, called row major storage for reference, and by adding a wrapper around every element, they themself are stored as a row of only one element. This is then the same as transposing the vector:
+
+$$E_{diff} = \left [a_1, a_2, \dots, a_n \right ] \rightarrow \begin{bmatrix}
+    [a_1] \\ [a_2] \\ \vdots \\ [a_n]
+\end{bmatrix}$$
+
+The transposed array, though now with an extra superficial dimension, is then multiplied element-wise with a one-dimensional array. But since the elements of \mintinline{python}{E_diff} is now arrays in their own right, \mintinline{python}{dPsidvb} is copied for each row of \mintinline{python}{E_diff}. Result in
+
+$$\begin{bmatrix}
+    [a_1] \\ [a_2] \\ \vdots \\ [a_n]
+  \end{bmatrix} * [b_1, b_2, \dots, b_n] \rightarrow \begin{bmatrix}
+  a_1 \cdot [b_1, b_2, \dots, b_n] \\
+  a_2 \cdot [b_1, b_2, \dots, b_n] \\
+  \vdots \\
+  a_n \cdot [b_1, b_2, \dots, b_n] \\
+  \end{bmatrix}$$
+
+Where * is element-wise multiplication and $\cdot$ is the scalar product. Going back to the first example we then have
+
+$$\begin{bmatrix}
+      [a_{11}] & [a_{12}] \\
+
+     [a_{21}] & [a_{22}]
+  \end{bmatrix}*\begin{bmatrix}
+     [b_{11} & b_{12}]  \\
+
+    [b_{21} & b_{22}]
+  \end{bmatrix} \rightarrow \begin{bmatrix}
+    [a_{ 11 }] \cdot [b_{11} & b_{12}] & [a_{12}] \cdot [b_{11} & b_{12}]  \\
+
+    [a_{21}]\cdot[b_{21} & b_{22}] & [a_{22}] \cdot [b_{21} & b_{22}]
+  \end{bmatrix} \rightarrow \begin{bmatrix}
+    a_{11}b_{11} + a_{11}b_{12} & a_{12}b_{11} + a_{12}b_{12} \\
+    a_{21}b_{21} + a_{21}b_{22} & a_{22}b_{21} + a_{22}b_{22}
+  \end{bmatrix}$$
+
+Where it is important to notice that we have refrained from using the $=$ sign as this is all meant as a way to visualize the process as apposed to being mathematically correct.
+
+We then come to the update part of the solver, which has been severly shortened here as there is much of it that is used for logging different run statistics.
+
+\begin{minted}{python}
+def find_min_energy(...):
+  
+  ...
+
+  for n in range(epochs):
+    DeltaVB, DeltaHB, DeltaW = MonteCarlo(...)
+
+    adapt_lr = adapt_func(...)
+
+    model.visual_bias -= adapt_lr*DeltaVB
+    model.hidden_bias -= adapt_lr*DeltaHB
+    model.weights -= adapt_lr*DeltaW
+
+
+  ...
+
+return stats
+\end{minted}
+
+For each epoch it calls the \mintinline{python}{MonteCarlo(...)} function for the derivatives of the cost function based on the different variables we want to optimize. Then there is an adaptive learning rate function, which is defined by the user at the main \mintinline{python}{run(...)} call, and then we update the machine variables.
+

@@ -1,6 +1,12 @@
 \section{Calculation of the local energy}
 
-We know that the local energy of a particular sample state $\ket{s}$ can be calculated as
+At the sampling part we skipped over an important line.
+
+\begin{minted}{python}
+  E_local = local_energy_func(dist_s)
+\end{minted}
+
+Where we have to calculate the local energy of the quantum system in question. We know that the local energy of a particular sample state $\ket{s}$ can be calculated as
 
 \begin{equation}
   E_{loc} = \displaystyle\frac{\bra{s}H\ket{\psi_{rbm}}}{\braket{s}{\psi_{rbm}}} \; ,
