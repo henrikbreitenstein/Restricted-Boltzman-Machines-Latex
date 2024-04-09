@@ -1,1 +1,59 @@
 \section{The Pairing model}
+
+The Pairing model hamiltonian, when limited to up to two-body interactions, is defined as:
+
+\begin{equation}
+  \hat{H} = \sum_{\alpha\beta} \bra{\alpha}h_0\ket{\beta}\hc{a}{\alpha}\op{a}{\beta} + \frac{1}{4} \sum_{\alpha\beta\gamma\delta} \bra{\alpha\beta}\hat{V}\ket{\gamma\delta} \hc{a}{\alpha}\hc{a}{\beta}\op{a}{\delta}\op{a}{\gamma}
+  \label{eq:Pairing_model_imp}
+\end{equation}
+
+The hamiltonian represents fermions in a 
+
+With the assumption that the single particle energies grows linearly with the single particle levels $(p - 1)$ and that the two-body interaction strength is constant, we define
+
+\begin{equation}
+  \begin{gathered}
+    \hat{H}_0 = \epsilon \sum_{p\sigma} \left(p - 1\right) \hc{a}{p\sigma} \op{a}{p\sigma} \\
+    \hat{V} = -\frac{1}{2}g\sum_{pq} \hc{a}{p+}\hc{a}{p-}\op{a}{q-}\op{a}{q+} \; ,
+  \end{gathered}
+  \label{eq:sub_hamiltonian_pairing_imp}
+\end{equation}
+
+where $\epsilon$ defines the energy gap between levels, and $g$ represents the two-body pairing contribution strength. We will focus on the case of $S=0$, which means the system contains no broken pairs. If we then define the creation and annihilation operators for a pair
+
+\begin{equation*}
+  \begin{gathered}
+    \hat{P}_p^+ = \hc{a}{p+}\hc{a}{p-}\\
+    \hat{P}_p^- = \op{a}{p-}\op{a}{p+} \; ,
+  \end{gathered}
+\end{equation*}
+
+we can rewrite the hamiltonian as
+
+\begin{equation}
+  \hat{H} = \epsilon \sum_{p\sigma} \left(p-1\right)\hc{a}{p\sigma}\op{a}{p\sigma} - \frac{1}{2}g\sum_{pq}\hat{P}_p^+\hat{P}_q^- \; .
+  \label{eq:Pairing_model_final}
+\end{equation}
+
+To show that we can block-diagonalize the full Hamiltonian we will calculate the commutative relations between $\hat{H}_0$ and $\het{V}$ with the spin projection $\hat{S}_z$ and the total spin $\hat{S}^2$. Starting with $\hat{S}_z$ given by:
+
+\begin{equation}
+  \hat{S}_z = \frac{1}{2}\sum_{pq} \sigma \hc{a}{pq}\op{a}{pq}\; .
+  \label{eq:s_z}
+\end{equation}
+
+Further we have that
+
+\begin{equation}
+  \hat{S}^2 = \hat{S}_z^2 + \frac{1}{2} \left(\hat{S}_+\hat{S}_- + \hat{S}_-\hat{S}_+\right) \; ,
+  \label{eq:s_2}
+\end{equation}
+
+where
+
+\begin{equation}
+  \hat{S}_{\pm} = \sum_p \hc{a}{p\pm}\op{a}{p\mp} \; . 
+  \label{eq:s_pm}
+\end{equation}
+
+And the commutation relation
