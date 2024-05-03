@@ -53,8 +53,27 @@ where we define the acceptance ratio
     A(x', x) = \text{min} \left ( 1, \frac{P(x')Q(x|x')}{P(x)Q(x'|x)} \right ) \; .
 \end{equation}
 
-For each iteration $i$ we have a the state $x'$ taken at random from $Q(x' | x_i)$ which then is either accepted by $x_{i+1} = x'$ or rejected by $x_{i+1} = x_i$. The distribution of $\left \{ x_i \right \}$ will then approach our desired distribution $P(x)$ after a sufficient number of iterations.
+For each iteration $i$ we have the state $x'$ taken at random from $Q(x' | x_i)$ which then is either accepted by $x_{i+1} = x'$ or rejected by $x_{i+1} = x_i$. The distribution of $\left \{ x_i \right \}$ will then approach our desired distribution $P(x)$ after a sufficient number of iterations.
 
 \subsection{Gibbs Sampling}
 
-Gibbs sampling is a special use case where we accept every suggested state. It is then necessary to make the proposed distribution as close to the actual distribution as possible. How we accomplish this is covered in the  implementation section, see \ref{section:B.sampling}.
+Gibbs sampling is a special use case where we accept every suggested state. It is then necessary to make the proposed distribution as close to the actual distribution as possible. This is accomplished by sampling back and forth between the visual and hidden layer.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\textwidth]{Figures/Drawn/machinelearning/gibbs_sampling.pdf}
+  \end{center}
+  \caption{Gibbs sampling done $k$ times. The first hidden layer is generated randomly by a uniform distribution.}
+\end{figure}
+
+Sampling of a layer is done by the conditional distributions:
+
+\begin{center}
+\begin{gather}
+    P(\boldsymbol{v} | \boldsymbol{h} ) = \prod_{i \in \boldsymbol{v}} P(v_i | \boldsymbol{h} ) \\ 
+    P(\boldsymbol{h} | \boldsymbol{v} ) = \prod_{j \in \boldsymbol{h}} P(h_j | \boldsymbol{v} ) \; .
+\end{gather}
+\end{center}
+Repeated sampling converges, as shown by Christian P. Robert and George Casella in "Monte Carlo Statistical Methods", \cite{Robert1999} (chapter 10.2.1 page 378).
+
+

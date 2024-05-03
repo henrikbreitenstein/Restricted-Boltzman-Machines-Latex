@@ -235,4 +235,21 @@ This process can then be repeated easily with the fact that
     \delta_k^{i-1} =  \left [ \sum_k \delta_k^{(i)} w_{kj}^{(i-1)} \right ] z_j^{(i-1)} \left ( 1 - z_j^{(i-1)} \right  ) 
 \end{equation}
 
-for any layers further in. 
+for any layers further in.
+
+\subsection{Adaptive learning rate}
+
+The learning rate has a large impact on the resulting trained machine. A constant learning rate will make the training susceptible to small local minima of the cost function, and a way to combat this is to introduce an adaptive learning rate. We will use momentum:
+
+\begin{equation}
+  \begin{gathered}
+    v_t = v_{t-1}\gamma + \eta \nabla C \left ( \theta_{t-1} \right ) \\
+    \theta_t = \theta_{t-1} - v_t \;
+  \end{gathered}
+  \label{eq:momentum_theory}
+\end{equation}
+
+
+where $\gamma$ is a hyperparameter and $\eta$ is the learning rate. The $v_t$ is the "momentum" of the gradient decent of parameter $\theta$ of the current timestep, and $v_{t-1}$ is that of the previous timestep. It accumulates as the gradient continues in the same direction, and stumbling upon a small local minima will have to overcome the momentum first, which hopefully prevents the gradient decent from getting stuck.
+
+

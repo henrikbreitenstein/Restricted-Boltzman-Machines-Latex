@@ -505,3 +505,13 @@ where
 \end{equation}
 
 And the commutation relation
+
+We then do the same thing for the number of Gibbs sampling cycles, with $k = 1 \rightarrow k=10$,
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\optgridwidhtratio\textwidth]{Figures/Plots/OPt/Lipkin/[2][gibbs_k][e=500][1-10].pdf}
+  \end{center}
+  \caption{Search for optimal number of Gibbs sampling cycles when $\eta = 8.92$. In the plot is the variance of the local energy of each sample together with the variance of the local energy of each basis state. The variance of $E_{basis}$ has been normalized to stay in the same range as $E_{local}$ to make it readable. The Lipkin model is used with $\varepsilon = \impeps$, $V = \impV$ and $W = \impW$.}\label{fig:hn_depth2}
+\end{figure}
+
+We see a clear dip in $Var[E_{local}]$ from $k =1$ to $k=2$, and right after that the $Var[E_{basis}]$ jumps up, so we set $k=2$ to be optimal for the Lipkin model at $2$ particles. 

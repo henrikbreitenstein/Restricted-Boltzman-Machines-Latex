@@ -1,4 +1,4 @@
-\subsection{Model initialization}
+\section{Model initialization}
 
 The model initialization is just the how the RBM's structure is desired, but there are some caveats. The RBM really only consists of a few arrays: the visua layer bias, the hidden layer bias and the weights. Defining the size of these is for the most part all that is needed to 'create' an RBM. But, for the use of CUDA through PyTorch we have to define where these arrays are stored, and we would want flexibility as well, so that the code is useable with and without a CUDA graphics card. We do this as such:
 
@@ -21,4 +21,4 @@ def set_up_model(visual_n, hidden_n, precision, device):
     return init_model
 \end{minted}
 
-The supporting functions have been omitted to save space. The \mintinline{python}{create_model_dataclass(...)} is only for the possibility of changing precision with ease, even though everything in the thesis is done in 64-bit floating point precision. At the top of the function is the true creation of the RBM and the rest is for packaging it into one unit together with their data types. 
+The supporting functions have been omitted to save space. The \mintinline{python}{create_model_dataclass()} is only for the possibility of changing precision with ease, even though everything in the thesis is done in 64-bit floating point precision. At the top of the function is the true creation of the RBM and the rest is for packaging it into one unit together with their data types. 

@@ -1,4 +1,4 @@
-\subsection{CUDA and torch}
+\section{CUDA and torch}
 
 When we have large amounts of data and do the same unconditional operations on them, we can reduce the time it takes for the RBM to find the ground state by parallelizing parts of the calculations. The GPU, graphical processing unit, is designed for such tasks. To use the GPU we need a interface that can communicate with it. There are several options for GPU interfaces, but for NVIDIA\cite{NVIDIA} GPU's there is the CUDA\cite{cuda} interface. For simplicity we will use a python library: PyTorch\cite{paszke2019pytorch}. PyTorch is a machine learning library which has CUDA integration possibilities. To enable the use of the GPU we first initialize the GPU as a device:
 

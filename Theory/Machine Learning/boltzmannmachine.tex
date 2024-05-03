@@ -166,11 +166,11 @@ This is most often referred to as a neural net quantum state, or abbreviated NQS
 We want a restricted boltzmann machine to match the distribution of the ground state of a quantum mechanical systems. This poses a problem with the use of the change in weight, \ref{eq:rbm_change_weight}, as we do not have any data to train the model on. Instead we will use the variational principle with the fact that
 
 \begin{equation}
-  E \left [ \Psi_rbm \right ] \geq E_0 \; ,
+  E \left [ \Psi_{rbm} \right ] \geq E_0 \; ,
   \label{eq:train_rbm_vp}
 \end{equation}
 
-where $\Psi_rbm$ is the machine state and $E_0$ is the ground state of the quantum system we want the machine state to match. Because of \ref{eq:train_rbm_vp} we can variationly minimize the expected energy and be certain that it approaches the ground state. This poses another problem, though, because the machine state is not directly accessible, but one can take samples from the machine's distribution. So instead of using the machine state directly, one approximates it by a sufficient amount of samples, essentially taking repeated measurements of the system and constructing the wavefunction from the result. For $N$ total number of samples, and $M_k$ the number of samples that are the basis state $\ket{b_k} \in \boldsymbol{B}$, then we have the approximate machine state:
+where $\Psi_{rbm}$ is the machine state and $E_0$ is the ground state of the quantum system we want the machine state to match. Because of \ref{eq:train_rbm_vp} we can variationly minimize the expected energy and be certain that it approaches the ground state. This poses another problem, though, because the machine state is not directly accessible, but one can take samples from the machine's distribution. So instead of using the machine state directly, one approximates it by a sufficient amount of samples, essentially taking repeated measurements of the system and constructing the wavefunction from the result. For $N$ total number of samples, and $M_k$ the number of samples that are the basis state $\ket{b_k} \in \boldsymbol{B}$, then we have the approximate machine state:
 
 \begin{equation}
   \Psi_{rbm} \approx \sqrt{\frac{M_0}{N}} \ket{b_0} + \sqrt{\frac{M_1}{N}}\ket{b_1} + \dots + \sqrt{\frac{M_N}{N}}\ket{b_N} \; ,

@@ -260,11 +260,6 @@ INPUT .\abstract.tex
 INPUT .\abstract.tex
 INPUT abstract.tex
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
@@ -281,6 +276,11 @@ INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
 OUTPUT main.toc
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
@@ -364,6 +364,12 @@ INPUT .\Theory\Machine Learning\montecarlosampling.tex
 INPUT .\Theory\Machine Learning\montecarlosampling.tex
 INPUT .\Theory\Machine Learning\montecarlosampling.tex
 INPUT Theory\Machine Learning\montecarlosampling.tex
+INPUT .\Figures\Drawn\machinelearning\gibbs_sampling.pdf
+INPUT .\Figures\Drawn\machinelearning\gibbs_sampling.pdf
+INPUT .\Figures\Drawn\machinelearning\gibbs_sampling.pdf
+INPUT .\Figures\Drawn\machinelearning\gibbs_sampling.pdf
+INPUT .\Figures\Drawn\machinelearning\gibbs_sampling.pdf
+INPUT .\Figures\Drawn\machinelearning\gibbs_sampling.pdf
 INPUT .\Theory\Machine Learning\Controls and Errors.tex
 INPUT .\Theory\Machine Learning\Controls and Errors.tex
 INPUT .\Theory\Machine Learning\Controls and Errors.tex
@@ -379,16 +385,17 @@ INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
 INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
 INPUT .\Theory\Quantum Mechanics\basicprinciples.tex
 INPUT Theory\Quantum Mechanics\basicprinciples.tex
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
+INPUT .\Figures\Drawn\bloch pshere.pdf
 INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
 INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
 INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
 INPUT .\Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
 INPUT Theory\Quantum Mechanics\Measurements in Quantum Mechaincs.tex
-INPUT .\Theory\Quantum Mechanics\Entanglement.tex
-INPUT .\Theory\Quantum Mechanics\Entanglement.tex
-INPUT .\Theory\Quantum Mechanics\Entanglement.tex
-INPUT .\Theory\Quantum Mechanics\Entanglement.tex
-INPUT Theory\Quantum Mechanics\Entanglement.tex
 INPUT .\Theory\Many-Body Physics\manybodymethods.tex
 INPUT .\Theory\Many-Body Physics\manybodymethods.tex
 INPUT .\Theory\Many-Body Physics\manybodymethods.tex
@@ -404,17 +411,26 @@ INPUT .\Theory\Many-Body Physics\secondquantization.tex
 INPUT .\Theory\Many-Body Physics\secondquantization.tex
 INPUT .\Theory\Many-Body Physics\secondquantization.tex
 INPUT Theory\Many-Body Physics\secondquantization.tex
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
 INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
 INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
 INPUT .\Theory\Many-Body Physics\Methods and Algorithms.tex
 INPUT Theory\Many-Body Physics\Methods and Algorithms.tex
-INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
-INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
-INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
-INPUT .\Theory\Many-Body Physics\The Lipkin Model.tex
-INPUT Theory\Many-Body Physics\The Lipkin Model.tex
+INPUT .\Theory\Many-Body Physics\neural net quantum states.tex
+INPUT .\Theory\Many-Body Physics\neural net quantum states.tex
+INPUT .\Theory\Many-Body Physics\neural net quantum states.tex
+INPUT .\Theory\Many-Body Physics\neural net quantum states.tex
+INPUT Theory\Many-Body Physics\neural net quantum states.tex
+INPUT .\Theory\Models\models.tex
+INPUT .\Theory\Models\models.tex
+INPUT .\Theory\Models\models.tex
+INPUT .\Theory\Models\models.tex
+INPUT Theory\Models\models.tex
+INPUT .\Theory\Models\The Lipkin Model.tex
+INPUT .\Theory\Models\The Lipkin Model.tex
+INPUT .\Theory\Models\The Lipkin Model.tex
+INPUT .\Theory\Models\The Lipkin Model.tex
+INPUT Theory\Models\The Lipkin Model.tex
 INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
 INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
 INPUT .\Figures\Drawn\Lipkin\Lipkinstart22.pdf
@@ -460,304 +476,709 @@ INPUT .\Figures\Plots\Lipkin\J1_true.pdf
 INPUT .\Figures\Plots\Lipkin\J1_true.pdf
 INPUT .\Figures\Plots\Lipkin\J1_true.pdf
 INPUT .\Figures\Plots\Lipkin\J1_true.pdf
-INPUT .\Theory\Quantum Computing\quantumcomputing.tex
-INPUT .\Theory\Quantum Computing\quantumcomputing.tex
-INPUT .\Theory\Quantum Computing\quantumcomputing.tex
-INPUT .\Theory\Quantum Computing\quantumcomputing.tex
-INPUT Theory\Quantum Computing\quantumcomputing.tex
-INPUT .\Theory\Quantum Computing\basic principles.tex
-INPUT .\Theory\Quantum Computing\basic principles.tex
-INPUT .\Theory\Quantum Computing\basic principles.tex
-INPUT .\Theory\Quantum Computing\basic principles.tex
-INPUT Theory\Quantum Computing\basic principles.tex
-INPUT .\Figures\Drawn\bloch pshere.pdf
-INPUT .\Figures\Drawn\bloch pshere.pdf
-INPUT .\Figures\Drawn\bloch pshere.pdf
-INPUT .\Figures\Drawn\bloch pshere.pdf
-INPUT .\Figures\Drawn\bloch pshere.pdf
-INPUT .\Figures\Drawn\bloch pshere.pdf
-INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
-INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
-INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
-INPUT .\Theory\Quantum Computing\Quantum Circuits and Programming.tex
-INPUT Theory\Quantum Computing\Quantum Circuits and Programming.tex
-INPUT .\Figures\Circuits\Theory\basecircuit.pdf
-INPUT .\Figures\Circuits\Theory\basecircuit.pdf
-INPUT .\Figures\Circuits\Theory\basecircuit.pdf
-INPUT .\Figures\Circuits\Theory\basecircuit.pdf
-INPUT .\Figures\Circuits\Theory\basecircuit.pdf
-INPUT .\Figures\Circuits\Theory\basecircuit.pdf
-INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\Hbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\xyHbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\cxbasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\measurebasecircuit.pdf
-INPUT .\Figures\Circuits\Theory\zm.pdf
-INPUT .\Figures\Circuits\Theory\zm.pdf
-INPUT .\Figures\Circuits\Theory\zm.pdf
-INPUT .\Figures\Circuits\Theory\zm.pdf
-INPUT .\Figures\Circuits\Theory\zm.pdf
-INPUT .\Figures\Circuits\Theory\zm.pdf
-INPUT .\Figures\Circuits\Theory\xm.pdf
-INPUT .\Figures\Circuits\Theory\xm.pdf
-INPUT .\Figures\Circuits\Theory\xm.pdf
-INPUT .\Figures\Circuits\Theory\xm.pdf
-INPUT .\Figures\Circuits\Theory\xm.pdf
-INPUT .\Figures\Circuits\Theory\xm.pdf
-INPUT .\Figures\Circuits\Theory\ym.pdf
-INPUT .\Figures\Circuits\Theory\ym.pdf
-INPUT .\Figures\Circuits\Theory\ym.pdf
-INPUT .\Figures\Circuits\Theory\ym.pdf
-INPUT .\Figures\Circuits\Theory\ym.pdf
-INPUT .\Figures\Circuits\Theory\ym.pdf
-INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
-INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
-INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
-INPUT .\Theory\Quantum Computing\entangled qubits and bell states.tex
-INPUT Theory\Quantum Computing\entangled qubits and bell states.tex
-INPUT .\Figures\Circuits\Theory\2zero.pdf
-INPUT .\Figures\Circuits\Theory\2zero.pdf
-INPUT .\Figures\Circuits\Theory\2zero.pdf
-INPUT .\Figures\Circuits\Theory\2zero.pdf
-INPUT .\Figures\Circuits\Theory\2zero.pdf
-INPUT .\Figures\Circuits\Theory\2zero.pdf
-INPUT .\Figures\Circuits\Theory\2hadamard.pdf
-INPUT .\Figures\Circuits\Theory\2hadamard.pdf
-INPUT .\Figures\Circuits\Theory\2hadamard.pdf
-INPUT .\Figures\Circuits\Theory\2hadamard.pdf
-INPUT .\Figures\Circuits\Theory\2hadamard.pdf
-INPUT .\Figures\Circuits\Theory\2hadamard.pdf
-INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
-INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
-INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
-INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
-INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
-INPUT .\Figures\Circuits\Theory\HadaCNOT.pdf
-INPUT .\Figures\Circuits\Theory\00Bell.pdf
-INPUT .\Figures\Circuits\Theory\00Bell.pdf
-INPUT .\Figures\Circuits\Theory\00Bell.pdf
-INPUT .\Figures\Circuits\Theory\00Bell.pdf
-INPUT .\Figures\Circuits\Theory\00Bell.pdf
-INPUT .\Figures\Circuits\Theory\00Bell.pdf
-INPUT .\Figures\Circuits\Theory\10Bell.pdf
-INPUT .\Figures\Circuits\Theory\10Bell.pdf
-INPUT .\Figures\Circuits\Theory\10Bell.pdf
-INPUT .\Figures\Circuits\Theory\10Bell.pdf
-INPUT .\Figures\Circuits\Theory\10Bell.pdf
-INPUT .\Figures\Circuits\Theory\10Bell.pdf
-INPUT .\Figures\Circuits\Theory\01Bell.pdf
-INPUT .\Figures\Circuits\Theory\01Bell.pdf
-INPUT .\Figures\Circuits\Theory\01Bell.pdf
-INPUT .\Figures\Circuits\Theory\01Bell.pdf
-INPUT .\Figures\Circuits\Theory\01Bell.pdf
-INPUT .\Figures\Circuits\Theory\01Bell.pdf
-INPUT .\Figures\Circuits\Theory\11Bell.pdf
-INPUT .\Figures\Circuits\Theory\11Bell.pdf
-INPUT .\Figures\Circuits\Theory\11Bell.pdf
-INPUT .\Figures\Circuits\Theory\11Bell.pdf
-INPUT .\Figures\Circuits\Theory\11Bell.pdf
-INPUT .\Figures\Circuits\Theory\11Bell.pdf
-INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
-INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
-INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
-INPUT .\Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
-INPUT Theory\Quantum Computing\Noisy intermediate-scale quantum.tex
-INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
-INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
-INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
-INPUT .\Theory\Quantum Computing\Variational Quantum Eigensolver.tex
-INPUT Theory\Quantum Computing\Variational Quantum Eigensolver.tex
-INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
-INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
-INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
-INPUT .\Theory\Quantum Machine Learning\quantummachinelearning.tex
-INPUT Theory\Quantum Machine Learning\quantummachinelearning.tex
-INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
-INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
-INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
-INPUT .\Theory\Quantum Machine Learning\Quantum Nodes.tex
-INPUT Theory\Quantum Machine Learning\Quantum Nodes.tex
-INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
-INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
-INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
-INPUT .\Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
-INPUT Theory\Quantum Machine Learning\Variational Quantum Boltzmann Machine.tex
+INPUT .\Theory\Models\ising.tex
+INPUT .\Theory\Models\ising.tex
+INPUT .\Theory\Models\ising.tex
+INPUT .\Theory\Models\ising.tex
+INPUT Theory\Models\ising.tex
+INPUT .\Figures\Drawn\Ising\ising 1d.pdf
+INPUT .\Figures\Drawn\Ising\ising 1d.pdf
+INPUT .\Figures\Drawn\Ising\ising 1d.pdf
+INPUT .\Figures\Drawn\Ising\ising 1d.pdf
+INPUT .\Figures\Drawn\Ising\ising 1d.pdf
+INPUT .\Figures\Drawn\Ising\ising1dciclous.pdf
+INPUT .\Figures\Drawn\Ising\ising1dciclous.pdf
+INPUT .\Figures\Drawn\Ising\ising1dciclous.pdf
+INPUT .\Figures\Drawn\Ising\ising1dciclous.pdf
+INPUT .\Figures\Drawn\Ising\ising1dciclous.pdf
+INPUT .\Figures\Drawn\Ising\2dciclous.pdf
+INPUT .\Figures\Drawn\Ising\2dciclous.pdf
+INPUT .\Figures\Drawn\Ising\2dciclous.pdf
+INPUT .\Figures\Drawn\Ising\2dciclous.pdf
+INPUT .\Figures\Drawn\Ising\2dciclous.pdf
+INPUT .\Figures\Plots\Ising\ising_diag.pdf
+INPUT .\Figures\Plots\Ising\ising_diag.pdf
+INPUT .\Figures\Plots\Ising\ising_diag.pdf
+INPUT .\Figures\Plots\Ising\ising_diag.pdf
+INPUT .\Figures\Plots\Ising\ising_diag.pdf
+INPUT .\Figures\Plots\Ising\ising_diag.pdf
+INPUT .\Figures\Plots\Ising\ising_diag_42.pdf
+INPUT .\Figures\Plots\Ising\ising_diag_42.pdf
+INPUT .\Figures\Plots\Ising\ising_diag_42.pdf
+INPUT .\Figures\Plots\Ising\ising_diag_42.pdf
+INPUT .\Figures\Plots\Ising\ising_diag_42.pdf
+INPUT .\Figures\Plots\Ising\ising_diag_42.pdf
+INPUT .\Theory\Models\heisenberg.tex
+INPUT .\Theory\Models\heisenberg.tex
+INPUT .\Theory\Models\heisenberg.tex
+INPUT .\Theory\Models\heisenberg.tex
+INPUT Theory\Models\heisenberg.tex
+INPUT .\Figures\Plots\Heisen\heisen_eig_21.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_21.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_21.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_21.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_21.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_22.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_22.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_22.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_22.pdf
+INPUT .\Figures\Plots\Heisen\heisen_eig_22.pdf
+INPUT .\Theory\Models\pairing.tex
+INPUT .\Theory\Models\pairing.tex
+INPUT .\Theory\Models\pairing.tex
+INPUT .\Theory\Models\pairing.tex
+INPUT Theory\Models\pairing.tex
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P2N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P2N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P2N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P2N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P2N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P3N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P3N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P3N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P3N1.pdf
+INPUT .\Figures\Plots\Pairing\pairing_eps05_P3N1.pdf
 INPUT .\Implementation\Implementation.tex
 INPUT .\Implementation\Implementation.tex
 INPUT .\Implementation\Implementation.tex
 INPUT .\Implementation\Implementation.tex
 INPUT Implementation\Implementation.tex
-INPUT .\Implementation\Qiskit\qiskit.tex
-INPUT .\Implementation\Qiskit\qiskit.tex
-INPUT .\Implementation\Qiskit\qiskit.tex
-INPUT .\Implementation\Qiskit\qiskit.tex
-INPUT Implementation\Qiskit\qiskit.tex
+INPUT .\Implementation\use of hardware.tex
+INPUT .\Implementation\use of hardware.tex
+INPUT Implementation\use of hardware.tex
 OUTPUT main.pyg
 INPUT .\_minted-main\friendly.pygstyle
 INPUT .\_minted-main\friendly.pygstyle
 INPUT _minted-main\friendly.pygstyle
 INPUT .\main.pyg
-INPUT .\_minted-main\1A21880461BE21D88C35EE2F5C4401BFCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\1A21880461BE21D88C35EE2F5C4401BFCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\1A21880461BE21D88C35EE2F5C4401BFCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\Figures\Circuits\implementation\1zero.pdf
-INPUT .\Figures\Circuits\implementation\1zero.pdf
-INPUT .\Figures\Circuits\implementation\1zero.pdf
-INPUT .\Figures\Circuits\implementation\1zero.pdf
-INPUT .\Figures\Circuits\implementation\1zero.pdf
-INPUT .\Figures\Circuits\implementation\1zero.pdf
+INPUT .\_minted-main\8F5DFF24F215AEEC7B93D28800F6D22BCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\8F5DFF24F215AEEC7B93D28800F6D22BCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\8F5DFF24F215AEEC7B93D28800F6D22BCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 OUTPUT main.pyg
 INPUT .\main.pyg
-INPUT .\_minted-main\18A892164874E8E86A370A74075AF568CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\18A892164874E8E86A370A74075AF568CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\18A892164874E8E86A370A74075AF568CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\Figures\Circuits\implementation\init1.pdf
-INPUT .\Figures\Circuits\implementation\init1.pdf
-INPUT .\Figures\Circuits\implementation\init1.pdf
-INPUT .\Figures\Circuits\implementation\init1.pdf
-INPUT .\Figures\Circuits\implementation\init1.pdf
-INPUT .\Figures\Circuits\implementation\init1.pdf
+INPUT .\_minted-main\6FFCF270D68E560505995F3543321789CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\6FFCF270D68E560505995F3543321789CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\6FFCF270D68E560505995F3543321789CF33289265490CC72470AF6FAFE9A294.pygtex
 OUTPUT main.pyg
 INPUT .\main.pyg
-INPUT .\_minted-main\72931F2B35C43A996FD942BA6C05E8C8CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\72931F2B35C43A996FD942BA6C05E8C8CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\72931F2B35C43A996FD942BA6C05E8C8CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmitt10.tfm
-INPUT .\Figures\Circuits\implementation\hada1.pdf
-INPUT .\Figures\Circuits\implementation\hada1.pdf
-INPUT .\Figures\Circuits\implementation\hada1.pdf
-INPUT .\Figures\Circuits\implementation\hada1.pdf
-INPUT .\Figures\Circuits\implementation\hada1.pdf
-INPUT .\Figures\Circuits\implementation\hada1.pdf
+INPUT .\_minted-main\5472DB438A1DC3720478CCFB4F25C45DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\5472DB438A1DC3720478CCFB4F25C45DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\5472DB438A1DC3720478CCFB4F25C45DCF33289265490CC72470AF6FAFE9A294.pygtex
 OUTPUT main.pyg
 INPUT .\main.pyg
-INPUT .\_minted-main\54A405E83EA4C477BE5F75AD8F940FC6CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\54A405E83EA4C477BE5F75AD8F940FC6CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\54A405E83EA4C477BE5F75AD8F940FC6CF33289265490CC72470AF6FAFE9A294.pygtex
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\40FB6D58CAEA376CF02A210374B881E2CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\40FB6D58CAEA376CF02A210374B881E2CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\40FB6D58CAEA376CF02A210374B881E2CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\Figures\Circuits\implementation\cx2.pdf
-INPUT .\Figures\Circuits\implementation\cx2.pdf
-INPUT .\Figures\Circuits\implementation\cx2.pdf
-INPUT .\Figures\Circuits\implementation\cx2.pdf
-INPUT .\Figures\Circuits\implementation\cx2.pdf
-INPUT .\Figures\Circuits\implementation\cx2.pdf
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\44F27DCAD73FDDCF411293B126A7E2ECCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\44F27DCAD73FDDCF411293B126A7E2ECCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\44F27DCAD73FDDCF411293B126A7E2ECCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\Figures\Circuits\implementation\2measure.pdf
-INPUT .\Figures\Circuits\implementation\2measure.pdf
-INPUT .\Figures\Circuits\implementation\2measure.pdf
-INPUT .\Figures\Circuits\implementation\2measure.pdf
-INPUT .\Figures\Circuits\implementation\2measure.pdf
-INPUT .\Figures\Circuits\implementation\2measure.pdf
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\A9E463FBE343BFE726E46D3136867AD1CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\A9E463FBE343BFE726E46D3136867AD1CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\A9E463FBE343BFE726E46D3136867AD1CF33289265490CC72470AF6FAFE9A294.pygtex
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\BE6A4CC5CC941DB494399039F96DC9CECF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\BE6A4CC5CC941DB494399039F96DC9CECF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\BE6A4CC5CC941DB494399039F96DC9CECF33289265490CC72470AF6FAFE9A294.pygtex
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\6E41D75022629A2B976BDFC0D556E6AFCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\6E41D75022629A2B976BDFC0D556E6AFCF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\6E41D75022629A2B976BDFC0D556E6AFCF33289265490CC72470AF6FAFE9A294.pygtex
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\F1C18ACB6CD040A96253BB4503D93590CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\F1C18ACB6CD040A96253BB4503D93590CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\F1C18ACB6CD040A96253BB4503D93590CF33289265490CC72470AF6FAFE9A294.pygtex
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\115D25D2A7EAEA2B9306ED730D9136C1CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\115D25D2A7EAEA2B9306ED730D9136C1CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\115D25D2A7EAEA2B9306ED730D9136C1CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\Figures\Circuits\implementation\y-basis.pdf
-INPUT .\Figures\Circuits\implementation\y-basis.pdf
-INPUT .\Figures\Circuits\implementation\y-basis.pdf
-INPUT .\Figures\Circuits\implementation\y-basis.pdf
-INPUT .\Figures\Circuits\implementation\y-basis.pdf
-INPUT .\Figures\Circuits\implementation\y-basis.pdf
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\698A39ECC0DF24D48015E55B2AB3D919CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\698A39ECC0DF24D48015E55B2AB3D919CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\698A39ECC0DF24D48015E55B2AB3D919CF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\Figures\Circuits\implementation\2mesy.pdf
-INPUT .\Figures\Circuits\implementation\2mesy.pdf
-INPUT .\Figures\Circuits\implementation\2mesy.pdf
-INPUT .\Figures\Circuits\implementation\2mesy.pdf
-INPUT .\Figures\Circuits\implementation\2mesy.pdf
-INPUT .\Figures\Circuits\implementation\2mesy.pdf
-OUTPUT main.pyg
-INPUT .\main.pyg
-INPUT .\_minted-main\9050195CD9A3513C23439C4E98EC0B0ACF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT .\_minted-main\9050195CD9A3513C23439C4E98EC0B0ACF33289265490CC72470AF6FAFE9A294.pygtex
-INPUT _minted-main\9050195CD9A3513C23439C4E98EC0B0ACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\AC256ADE7C07798BBB5F449D1DF95301CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\AC256ADE7C07798BBB5F449D1DF95301CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\AC256ADE7C07798BBB5F449D1DF95301CF33289265490CC72470AF6FAFE9A294.pygtex
 INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
 INPUT Implementation\Restricted Boltzmann Machine\Restricted Boltzmann Machine.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The base structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The base structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The base structure.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The base structure.tex
+INPUT Implementation\Restricted Boltzmann Machine\The base structure.tex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\3DD728920E57C0C3A31F9CCF29B1A78FCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\3DD728920E57C0C3A31F9CCF29B1A78FCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\3DD728920E57C0C3A31F9CCF29B1A78FCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\B0F24E3D11BFE3D31529D1B9F2745CFDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\B0F24E3D11BFE3D31529D1B9F2745CFDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\B0F24E3D11BFE3D31529D1B9F2745CFDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Implementation\Restricted Boltzmann Machine\Model initialization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Model initialization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Model initialization.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\Model initialization.tex
+INPUT Implementation\Restricted Boltzmann Machine\Model initialization.tex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\CDBE5E394ED949CAE61CD65F77590A6DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\CDBE5E394ED949CAE61CD65F77590A6DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\CDBE5E394ED949CAE61CD65F77590A6DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\8DCDC9DB69B83578C7136D68E74EA449CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\8DCDC9DB69B83578C7136D68E74EA449CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\8DCDC9DB69B83578C7136D68E74EA449CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Implementation\Restricted Boltzmann Machine\The solver.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The solver.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The solver.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\The solver.tex
+INPUT Implementation\Restricted Boltzmann Machine\The solver.tex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\0E00B92F45C80ABDE7AB397368EC98DDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\0E00B92F45C80ABDE7AB397368EC98DDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\0E00B92F45C80ABDE7AB397368EC98DDCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\47A18E2B10BFA923E535FBBD58D70112CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\47A18E2B10BFA923E535FBBD58D70112CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\47A18E2B10BFA923E535FBBD58D70112CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\7B7FC72515CB1D11FE9539F518686491CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\7B7FC72515CB1D11FE9539F518686491CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\7B7FC72515CB1D11FE9539F518686491CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\13EC5B8E14C3FC46A8D89FE81B122B19CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\13EC5B8E14C3FC46A8D89FE81B122B19CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\13EC5B8E14C3FC46A8D89FE81B122B19CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\8733EE9821728A0A0820D994F050163ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\8733EE9821728A0A0820D994F050163ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\8733EE9821728A0A0820D994F050163ECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\83C8B414124BCD92A5EC200EE1122BF0CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\83C8B414124BCD92A5EC200EE1122BF0CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\83C8B414124BCD92A5EC200EE1122BF0CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\FCF5237CE21C546E9D3B05BB6B310F88CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\FCF5237CE21C546E9D3B05BB6B310F88CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\FCF5237CE21C546E9D3B05BB6B310F88CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\ADDB427D1FFEC366F3DA54F297EFCE8DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\ADDB427D1FFEC366F3DA54F297EFCE8DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\ADDB427D1FFEC366F3DA54F297EFCE8DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\CCC87E7257869AD33A6A0BD9E28A4AE4CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\CCC87E7257869AD33A6A0BD9E28A4AE4CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\CCC87E7257869AD33A6A0BD9E28A4AE4CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\351AA75883FF00FAC8852791F6C7B414CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\351AA75883FF00FAC8852791F6C7B414CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\351AA75883FF00FAC8852791F6C7B414CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\A7F2A1DAC378B0B02FE8F3BDBBB2D0B3CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\A7F2A1DAC378B0B02FE8F3BDBBB2D0B3CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\A7F2A1DAC378B0B02FE8F3BDBBB2D0B3CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\66C6626716EFA92465F1DC11F2BB4FB5CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\66C6626716EFA92465F1DC11F2BB4FB5CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\66C6626716EFA92465F1DC11F2BB4FB5CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\9F5393A12883534E7F4F719C0AD09375CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\9F5393A12883534E7F4F719C0AD09375CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\9F5393A12883534E7F4F719C0AD09375CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\08E9DE24AB150D083240557CEC091D53CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\08E9DE24AB150D083240557CEC091D53CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\08E9DE24AB150D083240557CEC091D53CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\08E9DE24AB150D083240557CEC091D53CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\08E9DE24AB150D083240557CEC091D53CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\08E9DE24AB150D083240557CEC091D53CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\33FD7F9738AF1EFCFC14A63D2AEFFF9ECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\7359E94EF13D5CA096AF393949DE08A3CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\7359E94EF13D5CA096AF393949DE08A3CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\7359E94EF13D5CA096AF393949DE08A3CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\A3F398898C384B166322173BF0487AEACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\A3F398898C384B166322173BF0487AEACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\A3F398898C384B166322173BF0487AEACF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\041B1280C0685B4AC0DAA8764A1A333BCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\041B1280C0685B4AC0DAA8764A1A333BCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\041B1280C0685B4AC0DAA8764A1A333BCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\01FB5E6E3EA956A6AC4CC4D13983764DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\BA423E64F7E3D07725279A7AFF095DAFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\BA423E64F7E3D07725279A7AFF095DAFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\BA423E64F7E3D07725279A7AFF095DAFCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\912CAE1EEC253813398301B22DAD2C7ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\912CAE1EEC253813398301B22DAD2C7ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\912CAE1EEC253813398301B22DAD2C7ECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\2F7E0E238AB38912118A7BF64D9DEE55CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\2F7E0E238AB38912118A7BF64D9DEE55CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\2F7E0E238AB38912118A7BF64D9DEE55CF33289265490CC72470AF6FAFE9A294.pygtex
 INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
 INPUT .\Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
 INPUT Implementation\Restricted Boltzmann Machine\Calculation of local energy.tex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\CBE2B4A703E60DC2AE6198E361AEBCF1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\CBE2B4A703E60DC2AE6198E361AEBCF1CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\CBE2B4A703E60DC2AE6198E361AEBCF1CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\5E639D8ECDC9C9E9A6F47EEFEECF82BFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\5E639D8ECDC9C9E9A6F47EEFEECF82BFCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\5E639D8ECDC9C9E9A6F47EEFEECF82BFCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\88929F75174BCE6432F2C3FC8C994BE8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\88929F75174BCE6432F2C3FC8C994BE8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\88929F75174BCE6432F2C3FC8C994BE8CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\4B1DCB7209A716A0669F5D0C17D1A706CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\8EBDB14DF99A0B44D1B6D88A62414075CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\8EBDB14DF99A0B44D1B6D88A62414075CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\8EBDB14DF99A0B44D1B6D88A62414075CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\E7292D31201DD0C32F08109DA2B0412DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\B3136A962C78ED1216A17F6C0E30B9C0CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\B3136A962C78ED1216A17F6C0E30B9C0CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\B3136A962C78ED1216A17F6C0E30B9C0CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\84F394A453CD2A5D71D7C0113E4A8F07CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\D8DF4C7B0966A0056B88DD1526FF5791CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\A836716DE2FBD6D07C6C877427655C1DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\A836716DE2FBD6D07C6C877427655C1DCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\A836716DE2FBD6D07C6C877427655C1DCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\2D43DABCA906B6FA221FB25BF6AC5B05CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\2D43DABCA906B6FA221FB25BF6AC5B05CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\2D43DABCA906B6FA221FB25BF6AC5B05CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\7E3C5009DDC115B9522243D5FBB04BEDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\7E3C5009DDC115B9522243D5FBB04BEDCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\7E3C5009DDC115B9522243D5FBB04BEDCF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\DF471438479C58820A1821513472FAA6CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\DF471438479C58820A1821513472FAA6CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\DF471438479C58820A1821513472FAA6CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\C210CA6765FEA54D1C668BB522311E15CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\C210CA6765FEA54D1C668BB522311E15CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\C210CA6765FEA54D1C668BB522311E15CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\E5B879BFEB3616DEE98C4314D6497BB8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\E5B879BFEB3616DEE98C4314D6497BB8CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\E5B879BFEB3616DEE98C4314D6497BB8CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\87F4C42866A5B98271C40D23632F650ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\87F4C42866A5B98271C40D23632F650ECF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\87F4C42866A5B98271C40D23632F650ECF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\B0DEE5EBF361E3D5984EBA72ED8DE436CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\B0DEE5EBF361E3D5984EBA72ED8DE436CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\B0DEE5EBF361E3D5984EBA72ED8DE436CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\E6B2FF1B33C33E3EC6DE79D3801493B4CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\E6B2FF1B33C33E3EC6DE79D3801493B4CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\E6B2FF1B33C33E3EC6DE79D3801493B4CF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\1D64843ADAE6C6496B3AA5812F632002CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\1D64843ADAE6C6496B3AA5812F632002CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\1D64843ADAE6C6496B3AA5812F632002CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmitt10.tfm
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\5B789DEF86A5B9349725F7E3541A59DACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\5B789DEF86A5B9349725F7E3541A59DACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\5B789DEF86A5B9349725F7E3541A59DACF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\1E59DD43BB6EB0FF21785AA255074FCBCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\1E59DD43BB6EB0FF21785AA255074FCBCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\1E59DD43BB6EB0FF21785AA255074FCBCF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\Implementation\Restricted Boltzmann Machine\implementation tests.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\implementation tests.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\implementation tests.tex
+INPUT .\Implementation\Restricted Boltzmann Machine\implementation tests.tex
+INPUT Implementation\Restricted Boltzmann Machine\implementation tests.tex
+INPUT .\Figures\Plots\Implementation Test\Lipkin2-16.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin2-16.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin2-16.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin2-16.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin2-16.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin2-16.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin_relative_std.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin_relative_std.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin_relative_std.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin_relative_std.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin_relative_std.pdf
+INPUT .\Figures\Plots\Implementation Test\Lipkin_relative_std.pdf
+INPUT .\Implementation\Optimazation\optimazation.tex
+INPUT .\Implementation\Optimazation\optimazation.tex
+INPUT .\Implementation\Optimazation\optimazation.tex
+INPUT .\Implementation\Optimazation\optimazation.tex
+INPUT Implementation\Optimazation\optimazation.tex
+INPUT .\Figures\Plots\OPt\wrong_state.pdf
+INPUT .\Figures\Plots\OPt\wrong_state.pdf
+INPUT .\Figures\Plots\OPt\wrong_state.pdf
+INPUT .\Figures\Plots\OPt\wrong_state.pdf
+INPUT .\Figures\Plots\OPt\wrong_state.pdf
+INPUT .\Figures\Plots\OPt\wrong_state.pdf
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\EDB7452CB0C572F4D16AA5D94879987ACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\EDB7452CB0C572F4D16AA5D94879987ACF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\EDB7452CB0C572F4D16AA5D94879987ACF33289265490CC72470AF6FAFE9A294.pygtex
+OUTPUT main.pyg
+INPUT .\main.pyg
+INPUT .\_minted-main\F4B6C4C437DC43124236607107A80463CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT .\_minted-main\F4B6C4C437DC43124236607107A80463CF33289265490CC72470AF6FAFE9A294.pygtex
+INPUT _minted-main\F4B6C4C437DC43124236607107A80463CF33289265490CC72470AF6FAFE9A294.pygtex
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
-INPUT Implementation\Vartiational Quantum Boltzmann Machine\variationalquantumboltzmannmachine.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
-INPUT Implementation\Vartiational Quantum Boltzmann Machine\Inizialitzation.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
-INPUT Implementation\Vartiational Quantum Boltzmann Machine\Optimization Method of the VarQBM.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
-INPUT Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Structure.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
-INPUT .\Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
-INPUT Implementation\Vartiational Quantum Boltzmann Machine\Quantum Machine Parameter Optimization.tex
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][1.0-12.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][1.0-12.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][1.0-12.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][1.0-12.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][1.0-12.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][7.0-9.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][7.0-9.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][7.0-9.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][7.0-9.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][learning_rate][e=500][7.0-9.0].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][hidden_n][e=500][2-11].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][hidden_n][e=500][2-11].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][hidden_n][e=500][2-11].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][hidden_n][e=500][2-11].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][hidden_n][e=500][2-11].pdf
+INPUT .\Figures\Plots\OPt\Lipkin\[2][hidden_n][e=500][2-11].pdf
+INPUT .\Results and Discussion\resultsanddiscussion.tex
+INPUT .\Results and Discussion\resultsanddiscussion.tex
+INPUT .\Results and Discussion\resultsanddiscussion.tex
+INPUT .\Results and Discussion\resultsanddiscussion.tex
+INPUT Results and Discussion\resultsanddiscussion.tex
+INPUT .\Results and Discussion\The Lipkin model.tex
+INPUT .\Results and Discussion\The Lipkin model.tex
+INPUT .\Results and Discussion\The Lipkin model.tex
+INPUT .\Results and Discussion\The Lipkin model.tex
+INPUT Results and Discussion\The Lipkin model.tex
+INPUT .\Figures\Plots\Lipkin\Result25conv.pdf
+INPUT .\Figures\Plots\Lipkin\Result25conv.pdf
+INPUT .\Figures\Plots\Lipkin\Result25conv.pdf
+INPUT .\Figures\Plots\Lipkin\Result25conv.pdf
+INPUT .\Figures\Plots\Lipkin\Result25conv.pdf
+INPUT .\Figures\Plots\Lipkin\Result25conv.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dvb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dvb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dvb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dvb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dvb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dhb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dhb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dhb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dhb.pdf
+INPUT .\Figures\Plots\Lipkin\Result25dhb.pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=500][n=16][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=500][n=16][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=500][n=16][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=500][n=16][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=500][n=16][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=250][n=25][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=250][n=25][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=250][n=25][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=250][n=25][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=250][n=25][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=250][n=25][V=0][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=850][n=16][V=-0.5][W=0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=850][n=16][V=-0.5][W=0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=850][n=16][V=-0.5][W=0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=850][n=16][V=-0.5][W=0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=850][n=16][V=-0.5][W=0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[eps][-2.0-2.0][e=850][n=16][V=-0.5][W=0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[V][-1.0-0.0][e=850][n=16][eps=-2][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=0].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=0].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=0].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=0].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=0].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=0].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=-0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=-0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=-0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=-0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=-0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[W][-0.3-0.0][e=850][n=16][eps=-2][V=-0.5].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1].pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1]error.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1]error.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1]error.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1]error.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1]error.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][4-25][e=850][eps=-2][V=-0.5][W=0.1]error.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][8-25][e=500][eps=-2][V=-0.5][W=0.1]time.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][8-25][e=500][eps=-2][V=-0.5][W=0.1]time.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][8-25][e=500][eps=-2][V=-0.5][W=0.1]time.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][8-25][e=500][eps=-2][V=-0.5][W=0.1]time.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][8-25][e=500][eps=-2][V=-0.5][W=0.1]time.pdf
+INPUT .\Figures\Plots\Lipkin\[particles][8-25][e=500][eps=-2][V=-0.5][W=0.1]time.pdf
+INPUT .\Results and Discussion\The Ising model.tex
+INPUT .\Results and Discussion\The Ising model.tex
+INPUT .\Results and Discussion\The Ising model.tex
+INPUT .\Results and Discussion\The Ising model.tex
+INPUT Results and Discussion\The Ising model.tex
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=10][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=10][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=10][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=10][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=10][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=0].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=-0.5].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=-0.5].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=-0.5].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=-0.5].pdf
+INPUT .\Figures\Plots\Ising\[J][-1.0-0.0][e=500][n=9][L=-0.5].pdf
+INPUT .\Figures\Plots\Ising\[L][-0.5-0.0][e=500][n=10][J=-1].pdf
+INPUT .\Figures\Plots\Ising\[L][-0.5-0.0][e=500][n=10][J=-1].pdf
+INPUT .\Figures\Plots\Ising\[L][-0.5-0.0][e=500][n=10][J=-1].pdf
+INPUT .\Figures\Plots\Ising\[L][-0.5-0.0][e=500][n=10][J=-1].pdf
+INPUT .\Figures\Plots\Ising\[L][-0.5-0.0][e=500][n=10][J=-1].pdf
+INPUT .\Results and Discussion\The Heisenberg model.tex
+INPUT .\Results and Discussion\The Heisenberg model.tex
+INPUT .\Results and Discussion\The Heisenberg model.tex
+INPUT .\Results and Discussion\The Heisenberg model.tex
+INPUT Results and Discussion\The Heisenberg model.tex
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=10][N=10][M=1][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=0].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[J][-1.0-0.0][e=500][n=9][N=3][M=3][L=-0.5].pdf
+INPUT .\Figures\Plots\Heisen\[L][-0.5-0.0][e=500][n=10][N=10][M=1][J=-1].pdf
+INPUT .\Figures\Plots\Heisen\[L][-0.5-0.0][e=500][n=10][N=10][M=1][J=-1].pdf
+INPUT .\Figures\Plots\Heisen\[L][-0.5-0.0][e=500][n=10][N=10][M=1][J=-1].pdf
+INPUT .\Figures\Plots\Heisen\[L][-0.5-0.0][e=500][n=10][N=10][M=1][J=-1].pdf
+INPUT .\Figures\Plots\Heisen\[L][-0.5-0.0][e=500][n=10][N=10][M=1][J=-1].pdf
+INPUT .\Results and Discussion\The Pairing model.tex
+INPUT .\Results and Discussion\The Pairing model.tex
+INPUT .\Results and Discussion\The Pairing model.tex
+INPUT .\Results and Discussion\The Pairing model.tex
+INPUT Results and Discussion\The Pairing model.tex
+INPUT .\Results and Discussion\Met-hast vs gibbs.tex
+INPUT .\Results and Discussion\Met-hast vs gibbs.tex
+INPUT .\Results and Discussion\Met-hast vs gibbs.tex
+INPUT .\Results and Discussion\Met-hast vs gibbs.tex
+INPUT Results and Discussion\Met-hast vs gibbs.tex
+INPUT .\Figures\Plots\met_gibbs_V.pdf
+INPUT .\Figures\Plots\met_gibbs_V.pdf
+INPUT .\Figures\Plots\met_gibbs_V.pdf
+INPUT .\Figures\Plots\met_gibbs_V.pdf
+INPUT .\Figures\Plots\met_gibbs_V.pdf
+INPUT .\Figures\Plots\met_gibbs_V.pdf
+INPUT .\conclusion.tex
+INPUT .\conclusion.tex
+INPUT .\conclusion.tex
+INPUT .\conclusion.tex
+INPUT conclusion.tex
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
@@ -775,10 +1196,14 @@ INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex7.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex7.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
@@ -817,7 +1242,3 @@ INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xyatip10.pfb
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb
-INPUT C:\Users\breit\AppData\Local\Programs\MiKTeX\fonts\type1\public\xypic\xybtip10.pfb

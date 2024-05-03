@@ -50,8 +50,6 @@ From this we have the commutation relations
 \end{align}
 
 \subsection{Operators in second quantization}
-\url{https://github.com/ManyBodyPhysics/FYS4480/blob/master/doc/pub/week36/ipynb/week36.ipynb}
-
 For a one-body operator in coordinate space we have
 \begin{equation}
     \hat{H}_0 = \sum_i \hat{h}_0(x_i) \label{eq:2-23} \; ,
@@ -166,28 +164,5 @@ And we end up with
 
 where all indices are summed over single-particle states only.
 
-\subsection{Hamiltonian in second quantization}
-
-The way we calculate the local energy in practicality is connected to the hamiltonian's effect on a state. As such we will go over a concrete example to make our implementation exelanation, see \ref{section:imp_local} simpler to understand. For an example hamiltonian
-
-\begin{equation}
-    H =\sum_{p,\sigma} \varepsilon_{p,\sigma}\hc{a}{p,\sigma}\op{a}{p,\sigma} \; ,
-\end{equation}
-
-where $p$ is the number of fermions, here $2$, and $\sigma$ is the up or down spin. We can then apply the hamiltonian to each of the basis states.
-
-\begin{align}
-    H\ket{00} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right ) \ket{00}\\
-    H\ket{01} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right 
-    )\ket{01}\\
-    H\ket{10} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right ) \ket{10}\\
-    H\ket{11} &= \left ( \varepsilon_{0,+} \hc{a}{0,+} \op{a}{0,+} + \varepsilon_{0,-} \hc{a}{0,-} \op{a}{0,-} +\varepsilon_{1,+} \hc{a}{1,+} \op{a}{1,+} \varepsilon_{1,-} \hc{a}{1,-} \op{a}{1,-} \right ) \ket{11} \; .
-\end{align}
-
-The local energy of a state $\ket{s}$ is:
-
-\begin{equation}
-    E_{local} = \frac{\bra{s} H \ket{\psi}}{\braket{s}{\psi}}    \; ,
-\end{equation}
 
 

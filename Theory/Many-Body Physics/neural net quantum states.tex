@@ -7,3 +7,22 @@ To use a neural network to solve a quantum mechanical system we need a way to re
 \end{equation}
 
 where we have $N$ input variables, with accordance to the number of degrees of freedom the state $\ket{\Psi}$ has, as well as weights $\boldsymbol{W}$ and biases $\boldsymbol{B}$ of the neural network $F$.
+\\
+\vspace{\baselineskip}
+
+This means our visual layer in our RBM will be of a basis state of the system. If we imagine a two-bit system we have the basis states:
+
+\begin{gather}
+\begin{aligned}
+    \ket{0} \otimes \ket{0} &= \ket{00} \\
+    \ket{1} \otimes \ket{0} &= \ket{10} \\
+    \ket{0} \otimes \ket{1} &= \ket{01} \\
+    \ket{1} \otimes \ket{1} &= \ket{11} \; .
+\end{aligned}
+\end{gather}
+
+Our visual layer will then be a binary matrix of size two where it corresponds to a basis state:
+
+$$\mathbf{v} = \begin{bmatrix} 1, 0\end{bmatrix} \rightarrow \ket{1, 0} \; .$$
+
+The machines probability distribution over the possible outputs of the visual layer then works as a wavefunction, and generated outputs would be measurements of that wavefunction.
